@@ -1,0 +1,5 @@
+file	sha256	size
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000002765.6/ncbi_dataset/data/GCF_000002765.6/cds_from_genomic.fna	d912c122a4e77140d653b31ad0f576c175c48b4b9cb6c18e496889411b6407e4	14379150
+/home/huyudi/015_plasmo/data/raw/veupathdb/PlasmoDB-71/PlasmoDB-71_Pfalciparum3D7.gff	f36666547a9536af154c2264ba44c7467b504f20b050fc97808e79de5ab6777e	6942793
+/home/huyudi/015_plasmo/data/derived/WP4/L1_codon_x_stress/L1_response_by_gene.tsv	c3824c46641362e30fbedfe67cbf2346d1fa4386b196eb97ee4847c665753664	8012147
+/home/huyudi/015_plasmo/data/derived/WP4/L1_codon_x_stress/L1_GSE226632_dTE.tsv	d32f76e3967a1da9244c5fe92569788a716a7f07575cb64edc685d182cb02629	188831

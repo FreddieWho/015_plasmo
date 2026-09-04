@@ -1,0 +1,15 @@
+{
+  "n_species_with_protein": 16,
+  "n_orthogroups_ge4": 3647,
+  "n_single_copy_core": 181,
+  "median_r2_masked": 0.7874283005093783,
+  "median_r2_unmasked": 0.7866446865149894,
+  "n_sig_masked_FDR05": 14,
+  "n_sig_unmasked_FDR05": 14,
+  "n_robust_aa": 13,
+  "robust_aa_list": "A,R,N,D,Q,G,I,K,F,P,W,Y,V",
+  "site_level_status": "PLACEHOLDER_QC_PASS",
+  "site_mean_gap": 0.01185495881462117,
+  "site_mean_identity": 0.8396675748890065,
+  "lcr_global_frac": 0.0018429552392566014
+}

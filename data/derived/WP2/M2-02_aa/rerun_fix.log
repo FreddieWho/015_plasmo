@@ -1,0 +1,53 @@
+Loading proteins...
+  SP001 GCF_000002765.6 n=5354
+  SP002 GCF_001601855.1 n=5279
+  SP003 GCF_001602025.1 n=5354
+  SP004 GCA_900093555.2 n=6519
+  SP005 GCF_000006355.2 n=5325
+  SP006 GCF_000321355.1 n=5716
+  SP007 GCF_001680005.1 n=5516
+  SP008 GCF_900090045.1 n=5927
+  SP011 GCF_900002375.2 n=4943
+  SP012 GCF_900002385.2 n=6039
+  SP013 GCF_900002335.3 n=5200
+  SP014 GCF_900005765.1 n=5133
+  SP015 GCF_000165395.2 n=3977
+  SP016 GCF_000691945.2 n=3601
+  SP017 GCF_000165365.1 n=4046
+  SP018 GCF_000006565.2 n=8318
+/home/huyudi/.local/lib/python3.11/site-packages/Bio/__init__.py:138: BiopythonWarning: You may be importing Biopython from inside the source tree. This is bad practice and might lead to downstream issues. In particular, you might encounter ImportErrors due to missing compiled C extensions. We recommend that you try running your code from outside the source tree. If you are outside the source tree then you have a pyproject.toml file in an unexpected directory: /home/huyudi/.local/lib/python3.11/site-packages
+  warnings.warn(
+/home/huyudi/.local/lib/python3.11/site-packages/Bio/Align/__init__.py:4413: BiopythonDeprecationWarning: The attribute 'target_end_gap_score' was renamed to 'end_insertion_score'. This was done to be consistent with the
+AlignmentCounts object returned by the .counts method of an Alignment object.
+  warnings.warn(
+/home/huyudi/.local/lib/python3.11/site-packages/Bio/Align/__init__.py:4413: BiopythonDeprecationWarning: The attribute 'query_end_gap_score' was renamed to 'end_deletion_score'. This was done to be consistent with the
+AlignmentCounts object returned by the .counts method of an Alignment object.
+  warnings.warn(
+Reusing existing orthogroups.tsv / single_copy_core.list (skip RBH) ...
+Reused Filtered OGs (>=4 species): 3647
+Reused Single-copy core (16 spp x1): 181
+Computing AA composition dual tracks...
+Background OLS CLR ~ genome_gc ...
+PGLS secondary ...
+Structural stratification...
+Site-level alignment sample...
+Site QC gap 0.012 ident 0.840 deferred=False
+Robustness LOO 7 clades...
+Writing QC...
+{
+  "n_species_with_protein": 16,
+  "n_orthogroups_ge4": 3647,
+  "n_single_copy_core": 181,
+  "median_r2_masked": 0.7874283005093783,
+  "median_r2_unmasked": 0.7866446865149894,
+  "n_sig_masked_FDR05": 14,
+  "n_sig_unmasked_FDR05": 14,
+  "n_robust_aa": 13,
+  "robust_aa_list": "A,R,N,D,Q,G,I,K,F,P,W,Y,V",
+  "site_level_status": "PLACEHOLDER_QC_PASS",
+  "site_mean_gap": 0.01185495881462117,
+  "site_mean_identity": 0.8396675748890065,
+  "lcr_global_frac": 0.0018429552392566014
+}
+Done M2-02
+EXIT 0

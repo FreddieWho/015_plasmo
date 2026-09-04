@@ -1,0 +1,7 @@
+seed: 42
+primary_contrast: [SP001, SP005]
+aux: [SP011]
+lcr: 30aa_window_entropy_lt_1.5_flag_gt_0.15
+normalization: species_internal_CPM_first
+fdr: BH_per_trait_track
+date: 2026-09-04

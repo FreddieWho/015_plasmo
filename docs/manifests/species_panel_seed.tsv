@@ -1,0 +1,19 @@
+species_id	species	clade	host_group	rbc_ecology	provisional_role	preferred_reference_label	sequence_source	priority	quality_status	notes
+SP001	Plasmodium falciparum	Laverania	human	blood-stage RBC	DISCOVERY|DEEP	3D7	NCBI+PlasmoDB	HIGH	TO_AUDIT	Core high-AT reference and richest functional data
+SP002	Plasmodium reichenowi	Laverania	chimpanzee	blood-stage RBC	DISCOVERY	CDC/best current annotated	NCBI+PlasmoDB	MEDIUM	TO_AUDIT	Near-relative control for Laverania composition
+SP003	Plasmodium gaboni	Laverania	chimpanzee	blood-stage RBC	DISCOVERY_CANDIDATE	best current annotated	NCBI+PlasmoDB	MEDIUM	TO_AUDIT	Adds independent Laverania contrast if annotation passes
+SP004	Plasmodium vivax	vivax clade	human	reticulocyte-biased RBC	DISCOVERY|DEEP_CANDIDATE	P01 preferred; audit current	NCBI+PlasmoDB	HIGH	TO_AUDIT	Composition contrast and Pv4 population data
+SP005	Plasmodium knowlesi	vivax/knowlesi clade	macaque/human zoonosis	RBC; 24h cycle	DISCOVERY|DEEP	A1-H.1/H; audit current	NCBI+PlasmoDB	HIGH	TO_AUDIT	Culture, scRNA and essential-genome bridge
+SP006	Plasmodium cynomolgi	vivax/knowlesi clade	macaque	reticulocyte-biased RBC	DISCOVERY	B/best current annotated	NCBI+PlasmoDB	MEDIUM	TO_AUDIT	Near-relative ecological control
+SP007	Plasmodium coatneyi	vivax/knowlesi clade	macaque	RBC	DISCOVERY_CANDIDATE	Hackeri/best current annotated	NCBI+PlasmoDB	LOW_MEDIUM	TO_AUDIT	Optional macaque clade contrast
+SP008	Plasmodium malariae	malariae clade	human	RBC; quartan cycle	DISCOVERY|DEEP_CANDIDATE	UG01/best current annotated	NCBI+PlasmoDB	MEDIUM	TO_AUDIT	Human malaria divergence; sparse data
+SP009	Plasmodium ovale curtisi	ovale clade	human	reticulocyte-biased RBC	DISCOVERY	GH01/best current annotated	NCBI+PlasmoDB	MEDIUM	TO_AUDIT	Human malaria lineage
+SP010	Plasmodium ovale wallikeri	ovale clade	human	reticulocyte-biased RBC	DISCOVERY_CANDIDATE	best current annotated	NCBI+PlasmoDB	LOW_MEDIUM	TO_AUDIT	Sister lineage; annotation must pass
+SP011	Plasmodium berghei	rodent malaria	rodent	RBC; full experimental lifecycle	DISCOVERY|DEEP	ANKA	NCBI+PlasmoDB	HIGH	TO_AUDIT	Full-lifecycle single-cell and experimental tractability
+SP012	Plasmodium yoelii	rodent malaria	rodent	RBC/liver experimental model	DISCOVERY|DEEP_CANDIDATE	17XNL/17X; audit current	NCBI+PlasmoDB	MEDIUM_HIGH	TO_AUDIT	Alternative deep-dive rodent species
+SP013	Plasmodium chabaudi chabaudi	rodent malaria	rodent	RBC	DISCOVERY	AS	NCBI+PlasmoDB	MEDIUM	TO_AUDIT	Independent rodent lineage/phenotype control
+SP014	Plasmodium relictum	avian malaria	bird	avian RBC	DISCOVERY_CANDIDATE	SGS1/best current annotated	NCBI+PlasmoDB	LOW_MEDIUM	TO_AUDIT	Host/ecology contrast; only if annotation quality sufficient
+SP015	Babesia bovis	piroplasm	cattle	intraerythrocytic	OUTGROUP	T2Bo	NCBI+PiroplasmaDB	MEDIUM	TO_AUDIT	RBC growth convergence control
+SP016	Babesia microti	piroplasm	rodent/human zoonosis	intraerythrocytic	OUTGROUP	RI	NCBI+PiroplasmaDB	MEDIUM	TO_AUDIT	Independent RBC parasite
+SP017	Theileria parva	piroplasm	cattle	leukocyte proliferation then RBC	OUTGROUP	Muguga	NCBI+PiroplasmaDB	MEDIUM	TO_AUDIT	Key ecology contrast to RBC-proliferating taxa
+SP018	Toxoplasma gondii	coccidian	broad host	nucleated cells	OUTGROUP	ME49	NCBI+ToxoDB	HIGH	TO_AUDIT	Apicomplexan non-RBC reference

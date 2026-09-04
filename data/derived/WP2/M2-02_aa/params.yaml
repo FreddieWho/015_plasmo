@@ -1,0 +1,116 @@
+# M2-02_aa_counterfactual params — amino-acid layer counterfactual (WP2 / Gate B)
+# Must be reproducible; all thresholds explicit.
+
+run: M2-02_aa_counterfactual
+version: "1.0"
+date: 2026-09-03
+env:
+  python: "3.11.5 (GCC 11.2.0)"
+  biopython: "1.87"
+  numpy: "1.26.4"
+  scipy: "1.13.1"
+  scikit-learn: "1.5.1"
+  mafft: "fallback_python_progressive (system mafft not found)"
+  diamond: "fallback_python_kmerRBH (system diamond not found)"
+  mcl: "fallback_single_linkage_RBH"
+  orthofinder: "fallback_python_kmerRBH_v1 (OrthoFinder not installed; diamond+mcl lightweight fallback as per spec)"
+
+random_seed: 42
+frozen_panel: data/derived/WP1/M1-01_composition/M1-01_composition_table.tsv
+frozen_accessions: 18  # SP001-SP018
+has_cds: 16  # SP009/SP010 has_cds=false, protein absent — in tree only, explicitly marked
+tree: data/derived/WP1/M1-02_phylogeny/M1-02_species_tree.nwk
+clades_leave_one_out: [Laverania, avian, coccidian, malariae_ovale, piroplasm, rodent, vivax_knowlesi]
+clade_members:
+  Laverania: [SP001, SP002, SP003]
+  vivax_knowlesi: [SP004, SP005, SP006, SP007]
+  malariae_ovale: [SP008, SP009, SP010]
+  rodent: [SP011, SP012, SP013]
+  avian: [SP014]
+  piroplasm: [SP015, SP016, SP017]
+  coccidian: [SP018]
+
+# Orthogroup construction
+orthogroup:
+  input_proteins: data/raw/ncbi-datasets/<ACC>/ncbi_dataset/data/<ACC>/protein.faa  # 16 species
+  method: diamond_mcl_lightweight_fallback
+  kmer: 2  # AA 2-mer for cosine prefilter (400-dim)
+  prefilter_topN: 5
+  length_tolerance: 0.30  # candidate length within 30% of query
+  alignment: Bio.Align.PairwiseAligner (BLOSUM62, gap -10/-0.5)
+  clustering: reciprocal_best_hit_anchor_SP001_single_linkage
+  min_species_presence: 4  # retain OG with >=4 species for stats; core requires 16
+  single_copy_core: orthogroups with exactly 1 member in each of 16 species
+  version_record: fallback_python_kmerRBH_v1 (2026-09-03)
+
+# Composition closed handling
+composition:
+  aa_alphabet: [A,R,N,D,C,E,Q,G,H,I,L,K,M,F,P,S,T,W,Y,V]
+  pseudocount: 0.5
+  transform: CLR  # log(x / gmean(x)); logistic-normal alternative noted but CLR primary
+  background_predictor: genome_gc  # primary; cds_gc secondary reported
+  background_extra: cds_gc_gc4d_dinucGC  # reported in background_explained secondary columns
+  model: "CLR_AA ~ genome_gc (OLS primary; PGLS covariance from cophenetic distance secondary)"
+  r2_metric: OLS_R2
+
+# LCR / low complexity dual track
+lcr:
+  method: lowEntropy_window64_thresh1.5  # same as M1-03
+  window: 64
+  entropy_thresh: 1.5
+  entropy_base: 2  # bits, over 20 AA alphabet window composition
+  sampling: per-protein sliding window step 1
+  masked_rule: residues in any window with entropy<1.5 are LCR-masked (removed for masked track)
+  dual_track: [masked, unmasked]
+  homopolymer: "A{5,}|T{5,}... at AA level not used; homopolymer at NT level from M1-01 for reporting only"
+
+# Structural stratification (lightweight heuristic; InterPro formal domains deferred to M3)
+structural:
+  length_bins: quartiles per species
+  lcr_bins: [low_<0.05, mid_0.05-0.15, high_>0.15]
+  tm_heuristic:
+    method: Kyte-Doolittle sliding window 19, threshold 1.6, min 18 aa, max gap 2
+    scale: KyteDoolittle_1982
+  signalP_heuristic:
+    method: N-terminal 30 aa hydrophobic max window8 >1.8
+  interpro_formal: DEFERRED_TO_M3  # explicitly not run
+
+# Ancestral & site level
+ancestral:
+  method: parsimony_most_frequent_per_OG_site  # ancestral approx = most frequent AA across species per aligned site
+  alignment:
+    method: mafft_fallback_python_progressive  # 100 core OGs sampled
+    sample_n: 100
+    fallback: Bio.Align PairwiseAligner progressive (center star with SP001 as center)
+  site_residual_qc: [alignment_gap_frac <0.5, n_species_with_residue >=8, entropy <2.5]
+  site_deferred_if: gap_frac_mean >0.4 or mean_identity <0.25
+
+# Statistics
+stats:
+  fdr: Benjamini-Hochberg
+  alpha: 0.05
+  effect_size: Cohens_d_per_AA_residual (mean residual / sd)
+  direction_consistency: sign agreement across ≥5/7 clades
+  pgls_lambda: 0.0-1.0 reported but OLS primary per contract L1
+  n_perm: 0  # composition background does not use codon shuffling; AA shuffling not applied at site level in this version (documented)
+
+# Robustness
+robustness:
+  leave_one_clade_out: 7  # re-fit background per excluded clade, recompute residuals and FDR
+  robust_definition: FDR<0.05 in full + same direction in masked & unmasked + significant in >=5/7 LOO iterations
+  classification: [ROBUST, SENSITIVE, NOT_SIGNIFICANT]
+
+# Representative transcript rule (for traceability even though AA layer uses protein.faa)
+representative_transcript: longest CDS per gene (not applied to protein.faa OGs but recorded for congruence with M2-01 spec)
+filters: [len<150bp, not_div3, internal_stop]  # flagged if encountered in CDS but protein.faa is already curated
+output_dir: data/derived/WP2/M2-02_aa
+tables:
+  - M2-02_aa_residual_table.tsv
+  - M2-02_site_level_residual.tsv  # or DEFERRED flag
+  - M2-02_structural_stratification.tsv
+  - M2-02_background_explained.tsv
+  - M2-02_robustness.tsv
+  - orthogroups.tsv
+  - single_copy_core.list
+  - M2-02_qc.tsv
+notes: "All tables contain masked/unmasked dual columns; Gate B uses masked as primary robust criterion. No D006-D025 downloaded. No tRNA/proteome/population/MCA."

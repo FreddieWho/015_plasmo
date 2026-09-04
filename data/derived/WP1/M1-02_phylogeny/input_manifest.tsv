@@ -1,0 +1,20 @@
+file	size_bytes	note
+data/raw/ncbi-datasets/GCF_000002765.6/ncbi_dataset/data/GCF_000002765.6/GCF_000002765.6_GCA_000002765_genomic.fna	23584773	genomic for sketch SP001
+data/raw/ncbi-datasets/GCF_001601855.1/ncbi_dataset/data/GCF_001601855.1/GCF_001601855.1_ASM160185v1_genomic.fna	20835921	genomic for sketch SP002
+data/raw/ncbi-datasets/GCF_001602025.1/ncbi_dataset/data/GCF_001602025.1/GCF_001602025.1_ASM160202v1_genomic.fna	20720590	genomic for sketch SP003
+data/raw/ncbi-datasets/GCA_900093555.2/ncbi_dataset/data/GCA_900093555.2/GCA_900093555.2_GCA_900093555_genomic.fna	29427244	genomic for sketch SP004
+data/raw/ncbi-datasets/GCF_000006355.2/ncbi_dataset/data/GCF_000006355.2/GCF_000006355.2_GCA_000006355.2_genomic.fna	24718790	genomic for sketch SP005
+data/raw/ncbi-datasets/GCF_000321355.1/ncbi_dataset/data/GCF_000321355.1/GCF_000321355.1_PcynB_1.0_genomic.fna	26670680	genomic for sketch SP006
+data/raw/ncbi-datasets/GCF_001680005.1/ncbi_dataset/data/GCF_001680005.1/GCF_001680005.1_ASM168000v1_genomic.fna	28032729	genomic for sketch SP007
+data/raw/ncbi-datasets/GCF_900090045.1/ncbi_dataset/data/GCF_900090045.1/GCF_900090045.1_PmUG01_genomic.fna	34038135	genomic for sketch SP008
+data/raw/ncbi-datasets/GCA_060229945.1/ncbi_dataset/data/GCA_060229945.1/GCA_060229945.1_ASM6022994v1_genomic.fna	36615732	genomic for sketch SP009
+data/raw/ncbi-datasets/GCA_060229965.1/ncbi_dataset/data/GCA_060229965.1/GCA_060229965.1_ASM6022996v1_genomic.fna	34889727	genomic for sketch SP010
+data/raw/ncbi-datasets/GCF_900002375.2/ncbi_dataset/data/GCF_900002375.2/GCF_900002375.2_GCA_900002375_genomic.fna	19013441	genomic for sketch SP011
+data/raw/ncbi-datasets/GCF_900002385.2/ncbi_dataset/data/GCF_900002385.2/GCF_900002385.2_GCA_900002385_genomic.fna	23368140	genomic for sketch SP012
+data/raw/ncbi-datasets/GCF_900002335.3/ncbi_dataset/data/GCF_900002335.3/GCF_900002335.3_GCA_900002335_genomic.fna	19212445	genomic for sketch SP013
+data/raw/ncbi-datasets/GCF_900005765.1/ncbi_dataset/data/GCF_900005765.1/GCF_900005765.1_PRELSG_genomic.fna	22951483	genomic for sketch SP014
+data/raw/ncbi-datasets/GCF_000165395.2/ncbi_dataset/data/GCF_000165395.2/GCF_000165395.2_ASM16539v2_genomic.fna	8338428	genomic for sketch SP015
+data/raw/ncbi-datasets/GCF_000691945.2/ncbi_dataset/data/GCF_000691945.2/GCF_000691945.2_ASM69194v2_genomic.fna	6515345	genomic for sketch SP016
+data/raw/ncbi-datasets/GCF_000165365.1/ncbi_dataset/data/GCF_000165365.1/GCF_000165365.1_ASM16536v1_genomic.fna	8452906	genomic for sketch SP017
+data/raw/ncbi-datasets/GCF_000006565.2/ncbi_dataset/data/GCF_000006565.2/GCF_000006565.2_TGA4_genomic.fna	66735154	genomic for sketch SP018
+data/derived/WP1/M1-01_composition/M1-01_composition_table.tsv	8838	tip GC

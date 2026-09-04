@@ -1,0 +1,93 @@
+{
+  "tests": [
+    {
+      "contrast": "Rings_E1_R539T",
+      "n": 2570,
+      "n_AsnTop10": 311,
+      "median_FC_AsnTop10": -0.11470000000000091,
+      "median_FC_rest": -0.06200000000000028,
+      "MW_p": 0.0006547470584148252,
+      "spearman_Asn_FC": -0.11603452867528351,
+      "spearman_p": 3.6468224386411298e-09,
+      "n_sig": 876,
+      "frac_AsnTop10_in_sig": 0.11643835616438356
+    },
+    {
+      "contrast": "Rings_E1_C580Y",
+      "n": 2516,
+      "n_AsnTop10": 303,
+      "median_FC_AsnTop10": -0.005000000000000782,
+      "median_FC_rest": 0.06999999999999851,
+      "MW_p": 0.03510493629329367,
+      "spearman_Asn_FC": -0.10435031622894234,
+      "spearman_p": 1.5551200576438642e-07,
+      "n_sig": 1066,
+      "frac_AsnTop10_in_sig": 0.10881801125703565
+    },
+    {
+      "contrast": "Rings_E2_R539T",
+      "n": 2175,
+      "n_AsnTop10": 235,
+      "median_FC_AsnTop10": 0.0039999999999995595,
+      "median_FC_rest": 0.027499999999999858,
+      "MW_p": 0.2771498201040652,
+      "spearman_Asn_FC": -0.056021778156722137,
+      "spearman_p": 0.008969034599680068,
+      "n_sig": 598,
+      "frac_AsnTop10_in_sig": 0.09364548494983277
+    },
+    {
+      "contrast": "Rings_E2_C580Y",
+      "n": 2161,
+      "n_AsnTop10": 234,
+      "median_FC_AsnTop10": 0.25399999999999956,
+      "median_FC_rest": 0.17050000000000143,
+      "MW_p": 0.045090761450489916,
+      "spearman_Asn_FC": 0.03467861304296316,
+      "spearman_p": 0.10704001336970002,
+      "n_sig": 479,
+      "frac_AsnTop10_in_sig": 0.08977035490605428
+    },
+    {
+      "contrast": "Troph_E1_R539T",
+      "n": 2357,
+      "n_AsnTop10": 278,
+      "median_FC_AsnTop10": -0.1484999999999994,
+      "median_FC_rest": -0.0754999999999999,
+      "MW_p": 3.17269421528848e-08,
+      "spearman_Asn_FC": -0.11807675108866582,
+      "spearman_p": 8.946335166969236e-09,
+      "n_sig": 955,
+      "frac_AsnTop10_in_sig": 0.11727748691099477
+    },
+    {
+      "contrast": "Troph_E1_C580Y",
+      "n": 2351,
+      "n_AsnTop10": 278,
+      "median_FC_AsnTop10": -0.10424999999999995,
+      "median_FC_rest": -0.04400000000000048,
+      "MW_p": 3.910995831298384e-09,
+      "spearman_Asn_FC": -0.12892537781671637,
+      "spearman_p": 3.5167430341242387e-10,
+      "n_sig": 889,
+      "frac_AsnTop10_in_sig": 0.09898762654668167
+    },
+    {
+      "contrast": "Troph_E2_R539T",
+      "n": 2010,
+      "n_AsnTop10": 224,
+      "median_FC_AsnTop10": 0.02441666666666631,
+      "median_FC_rest": 0.029666666666666508,
+      "MW_p": 0.9462024163095992,
+      "spearman_Asn_FC": -0.053470258836401795,
+      "spearman_p": 0.016509307059750556,
+      "n_sig": 711,
+      "frac_AsnTop10_in_sig": 0.09845288326300984
+    }
+  ],
+  "meta": {
+    "n_contrasts": 7,
+    "n_positive": 1,
+    "median_spearman": -0.10435031622894234
+  }
+}

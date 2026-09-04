@@ -1,0 +1,13 @@
+seed: 42
+extraction_tool: pypdf
+pdf_main_pages: 31
+pdf_supp_pages: 29
+doi: 10.1038/s41564-024-01664-3
+pride_accession: PXD043747
+pride_files_total: 39
+pride_downloaded: 0
+geo_accession: GSE151189
+geo_platform: GPL18893
+geo_columns: 156
+raw_ms_policy: processed_first_deferred
+date: 2026-09-04

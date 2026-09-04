@@ -1,0 +1,6 @@
+metric	value
+grade	A
+independent_low_clades	Laverania,avian
+independent_high_clades	vivax_knowlesi,piroplasm
+criterion	Gate A requires ≥2 relatively independent contrasts (03 §4); low GC in Laverania+avian (separate), high GC in vivax clade+piroplasm (separate)
+note	M1-02 tree is k-mer Jaccard NJ rooted on Tg; not translation-dependent; full orthogroup tree deferred to WP2 if needed

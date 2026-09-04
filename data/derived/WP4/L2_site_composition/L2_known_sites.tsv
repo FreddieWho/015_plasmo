@@ -1,0 +1,15 @@
+gene	drug	og	pf_pos	aln_col	status	n_species	pf_aa	aas_present	r_gc	gc_aa_class
+PF3D7_1343700	K13 artemisinin	OG_002448	580	601	mapped	12	C	CS		0
+PF3D7_1343700	K13 artemisinin	OG_002448	539	560	mapped	12	R	R		1
+PF3D7_0709000	CRT chloroquine	OG_001542	76	78	mapped	12	K	K		-1
+PF3D7_0417200	DHFR pyrimethamine	OG_003565	51	50	mapped	12	N	IN		-1
+PF3D7_0417200	DHFR pyrimethamine	OG_003565	59	58	mapped	12	C	CRST		0
+PF3D7_0417200	DHFR pyrimethamine	OG_003565	108	123	mapped	12	S	NS		0
+PF3D7_0417200	DHFR pyrimethamine	OG_003565	164	188	mapped	12	I	I		-1
+PF3D7_0810800	DHPS sulfadoxine	OG_001846	436	450	mapped	9	S	S		0
+PF3D7_0810800	DHPS sulfadoxine	OG_001846	437	451	mapped	9	G	AG		1
+PF3D7_0810800	DHPS sulfadoxine	OG_001846	540	583	mapped	9	K	KM		-1
+PF3D7_0810800	DHPS sulfadoxine	OG_001846	581	624	mapped	9	A	A		1
+PF3D7_0523000	MDR1 multi	OG_003806	86	92	mapped	13	N	N		-1
+PF3D7_0523000	MDR1 multi	OG_003806	184	193	mapped	13	Y	Y		-1
+PF3D7_0523000	MDR1 multi	OG_003806	1246	1443	mapped	13	D	DS		-1

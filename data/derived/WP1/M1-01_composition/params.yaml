@@ -1,0 +1,15 @@
+# M1-01 params.yaml — composition map (A-level only, 04 §3)
+run: M1-01_composition
+frozen_source: data/metadata/frozen_assembly_candidates.tsv
+raw_base: data/raw/ncbi-datasets
+outdir: data/derived/WP1/M1-01_composition
+script: data/derived/WP1/M1-01_composition/run_composition.py
+fourfold_codons: [GCT,GCC,GCA,GCG,CGT,CGC,CGA,CGG,GGT,GGC,GGA,GGG,CTT,CTC,CTA,CTG,CCT,CCC,CCA,CCG,TCT,TCC,TCA,TCG,ACT,ACC,ACA,ACG,GTT,GTC,GTA,GTG]
+homopolymer_min_len: 5
+homopolymer_regex: "A{5,}|T{5,}|G{5,}|C{5,}"
+compartment_rule: "apicoplast if 'apicoplast/plastid/API/PLTD' in header lower; mitochondrion if 'mitochondrion/mt' ; nuclear_chromosome if 'chromosome' not 'unknown'; nuclear_other if 'chromosome unknown'; nuclear_contig if 'contig/scaffold/region'; else nuclear_other"
+dinucleotide: "numpy vectorized per contig (A/C/G/T mapped 0-3, N masked); overlapping count excluding N; 16 frequencies"
+gc_method: "str.count for genome/CDS; slicing seq[0::3] etc for GC1/2/3; 4D via codon loop over FOURFOLD set"
+n50_method: "sorted lengths descending, cum >= total/2"
+software: {python: "3.x", numpy: "used if available, fallback loops", re: "C-level"}
+date: 2026-09-03

@@ -1,0 +1,29 @@
+# Bulk data: reproducible downloads, intermediates, manual inbox binaries.
+# Provenance is recorded via sha256 in input_manifest.tsv / data_registry.tsv;
+# files themselves are re-downloadable (see docs/05_DATA_AUTO_DOWNLOAD.md,
+# docs/06_DATA_MANUAL_ACQUISITION.md). Keep the repo lean: code + docs + results.
+data/raw/
+data/interim/
+data/manual_inbox/
+data/veupathdb-file-download.zip
+data/derived/WP4/L2_site_composition/alignments/
+
+# Seed-paper PDFs: re-downloadable via DOI/PMC, excluded to stay lean.
+#  - iScience_seed_paper.pdf: Li et al 2024, DOI 10.1016/j.isci.2024.111167 (PMC11544085)
+#  - NAR_seed_paper.pdf: Hamilton et al 2017, DOI 10.1093/nar/gkw1259 (PMC5389722)
+docs/sources/*.pdf
+
+# Terminal regenerable result tables (>1MB each, reproducible in minutes
+# via their run scripts; load-bearing intermediates are NOT listed here).
+#  - M2-01_gene_level_residual.tsv <- WP2/M2-01_codon/run_codon_counterfactual.py
+#  - L2v2_site_table.tsv           <- WP4/L2_site_composition/run_l2_v2.py
+#  - L1h_long.tsv                  <- WP4/L1h_mok_genotype_context/run_l1h.py
+data/derived/WP2/M2-01_codon/M2-01_gene_level_residual.tsv
+data/derived/WP4/L2_site_composition/L2v2_site_table.tsv
+data/derived/WP4/L1h_mok_genotype_context/L1h_long.tsv
+
+# Python / notebooks / agent state
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pi/

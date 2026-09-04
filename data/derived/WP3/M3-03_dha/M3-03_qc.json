@@ -1,0 +1,9 @@
+{
+  "seed":"42",
+  "n_samples":"156",
+  "n_genes_CDS_probe":"5107",
+  "weights":"2^log2ratio clipped [-10,10], multi-probe mean in log2 space",
+  "caveat":"two-color ratio vs 3D7 pool = relative proxy, not absolute TPM; stage-delay confounding at late times -> early(<=8h) primary",
+  "DHA_times_Dd2":"[3.0, 6.0, 24.0, 32.0, 48.0]",
+  "DHA_times_Cam":"[8.0, 16.0, 24.0, 32.0, 40.0, 48.0]"
+}

@@ -1,0 +1,6 @@
+seed: 42
+primary: early<=8h DHA response + K13 DiD
+focus: LysAAA/AAG + Ile + 7+L/13
+weights: exp2_clipped
+fdr: BH_per_bg_time
+date: 2026-09-04

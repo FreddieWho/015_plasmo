@@ -1,0 +1,42 @@
+{
+  "seed":42,
+  "cds_genes":{
+    "SP001":5274,
+    "SP005":5180,
+    "SP011":4923
+  },
+  "geo_n_HT_files":12,
+  "geo_overlap_Pf":{
+    "CM_total":5168,
+    "CM_polysome":5168,
+    "AA_free_total":5168,
+    "AA_free_polysome":5168
+  },
+  "mca_overlap":{
+    "SP001":4913,
+    "SP005":5064,
+    "SP011":4879
+  },
+  "te_rep_corr":{
+    "CM_total":0.9790055385,
+    "CM_polysome":0.9655828361,
+    "AA_free_total":0.9813866969,
+    "AA_free_polysome":0.9244100341
+  },
+  "lcr_flagged_frac":{
+    "SP001":0.0075843762,
+    "SP005":0.0036679537,
+    "SP011":0.0022344099
+  },
+  "primary_match":"13\/36",
+  "match_CI95":[
+    0.2245761436,
+    0.5377909998
+  ],
+  "binom_p":0.132498164,
+  "caveats":[
+    "HS_ tRNA reference is human-annotated; anticodon-aggregated supply proxy only",
+    "families are not independent trials; binomial is auxiliary descriptive",
+    "n=3 species with expression; no cross-species regression fitted (I3)"
+  ]
+}

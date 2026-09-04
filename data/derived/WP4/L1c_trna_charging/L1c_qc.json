@@ -1,0 +1,20 @@
+{
+  "Asn_GTT_abundance_rank_low_is_depleted": "6.0/44",
+  "Asn_charging_by_stage": [
+    {
+      "stage": "R",
+      "charging_proxy": 1.7152720805784802,
+      "rank_within_stage": 11.0
+    },
+    {
+      "stage": "T",
+      "charging_proxy": 4.838137431669827,
+      "rank_within_stage": 7.0
+    },
+    {
+      "stage": "S",
+      "charging_proxy": 3.9291613553706077,
+      "rank_within_stage": 5.0
+    }
+  ]
+}

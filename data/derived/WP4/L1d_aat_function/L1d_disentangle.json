@@ -1,0 +1,10 @@
+{
+  "AP2_n": 28,
+  "AP2_Asn_content_median": 0.242,
+  "genome_Asn_content_median": 0.118,
+  "MW_p_Asn_content": 2.2e-12,
+  "AP2_AAT_share_median": 0.864,
+  "genome_AAT_share_median": 0.86,
+  "MW_p_AAT_share": 0.725,
+  "conclusion": "AP2 enrichment in AAT top-decile is PROTEIN-LEVEL Asn richness, NOT synonymous codon choice (AAT vs AAC share identical). The L1 AAT signal = Asn-rich proteins (AA composition layer), not a synonymous-codon signal."
+}

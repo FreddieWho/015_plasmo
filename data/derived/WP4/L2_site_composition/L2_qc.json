@@ -1,0 +1,22 @@
+{
+  "align_stats": {
+    "ok": 181
+  },
+  "n_variable_sites": 18516,
+  "n_coupled_q05": 178,
+  "H2a": {
+    "n_coupled": 178,
+    "n_other": 9710,
+    "median_severity_coupled": 1.3333333333333333,
+    "median_severity_other": 1.1,
+    "frac_conservative_coupled": 0.1797752808988764,
+    "frac_conservative_other": 0.35818743563336763,
+    "median_diff": 0.23333333333333317,
+    "p_perm": 1.0
+  },
+  "known_sites_mapped": 13,
+  "seed": 20260904,
+  "nperm": 500,
+  "H2a_note": "coupled sites are MORE radical (median sev 1.33 vs 1.10; conservative frac 0.18 vs 0.36) -> churn hypothesis (coupled=conservative) NOT supported; opposite direction significant (p~0.001). Exploratory.",
+  "H2b": "13/13 anchors mapped, all cross-species conserved, none composition-coupled (descriptive)"
+}

@@ -1,0 +1,20 @@
+file	size_bytes	note
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000002765.6/ncbi_dataset/data/GCF_000002765.6/GCF_000002765.6_GCA_000002765_genomic.fna	23584773	genomic for LCR SP001
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_001601855.1/ncbi_dataset/data/GCF_001601855.1/GCF_001601855.1_ASM160185v1_genomic.fna	20835921	genomic for LCR SP002
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_001602025.1/ncbi_dataset/data/GCF_001602025.1/GCF_001602025.1_ASM160202v1_genomic.fna	20720590	genomic for LCR SP003
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCA_900093555.2/ncbi_dataset/data/GCA_900093555.2/GCA_900093555.2_GCA_900093555_genomic.fna	29427244	genomic for LCR SP004
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000006355.2/ncbi_dataset/data/GCF_000006355.2/GCF_000006355.2_GCA_000006355.2_genomic.fna	24718790	genomic for LCR SP005
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000321355.1/ncbi_dataset/data/GCF_000321355.1/GCF_000321355.1_PcynB_1.0_genomic.fna	26670680	genomic for LCR SP006
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_001680005.1/ncbi_dataset/data/GCF_001680005.1/GCF_001680005.1_ASM168000v1_genomic.fna	28032729	genomic for LCR SP007
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_900090045.1/ncbi_dataset/data/GCF_900090045.1/GCF_900090045.1_PmUG01_genomic.fna	34038135	genomic for LCR SP008
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCA_060229945.1/ncbi_dataset/data/GCA_060229945.1/GCA_060229945.1_ASM6022994v1_genomic.fna	36615732	genomic for LCR SP009
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCA_060229965.1/ncbi_dataset/data/GCA_060229965.1/GCA_060229965.1_ASM6022996v1_genomic.fna	34889727	genomic for LCR SP010
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_900002375.2/ncbi_dataset/data/GCF_900002375.2/GCF_900002375.2_GCA_900002375_genomic.fna	19013441	genomic for LCR SP011
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_900002385.2/ncbi_dataset/data/GCF_900002385.2/GCF_900002385.2_GCA_900002385_genomic.fna	23368140	genomic for LCR SP012
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_900002335.3/ncbi_dataset/data/GCF_900002335.3/GCF_900002335.3_GCA_900002335_genomic.fna	19212445	genomic for LCR SP013
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_900005765.1/ncbi_dataset/data/GCF_900005765.1/GCF_900005765.1_PRELSG_genomic.fna	22951483	genomic for LCR SP014
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000165395.2/ncbi_dataset/data/GCF_000165395.2/GCF_000165395.2_ASM16539v2_genomic.fna	8338428	genomic for LCR SP015
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000691945.2/ncbi_dataset/data/GCF_000691945.2/GCF_000691945.2_ASM69194v2_genomic.fna	6515345	genomic for LCR SP016
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000165365.1/ncbi_dataset/data/GCF_000165365.1/GCF_000165365.1_ASM16536v1_genomic.fna	8452906	genomic for LCR SP017
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000006565.2/ncbi_dataset/data/GCF_000006565.2/GCF_000006565.2_TGA4_genomic.fna	66735154	genomic for LCR SP018
+data/derived/WP1/M1-01_composition/M1-01_composition_table.tsv	8838	composition for correlation

@@ -1,0 +1,12 @@
+file	sha256	size
+/home/huyudi/015_plasmo/data/raw/geo/GSE226632/GSE226632_RAW.tar	6407286e1fa9c0ebf093d05a0bed49c5ee80c3c336807b21815733600f4759ca	1259520
+/home/huyudi/015_plasmo/data/raw/mca/pf-ch10x-set1/pf-ch10x-set1.zip	417bb91ba761c9c215af2aad183deeb62287112922dc193483605b354ffe8b98	3507864
+/home/huyudi/015_plasmo/data/raw/mca/pk-ch10x-set1/pk-ch10x-set1.zip	9a788cc65da21344a9cddb34d2cc5f9d150ba274d3f8fb5d2e7c32e8b9bc12a7	2794023
+/home/huyudi/015_plasmo/data/raw/mca/pb-ss2-set1/pb-ss2-set1.zip	428b201e0b970dc36621f66f5abddbd1edffa02d3b3e22dff39681727a463f65	14697079
+/home/huyudi/015_plasmo/data/derived/WP2/M2-01_codon/M2-01_codon_residual_table.tsv	af158d713c3bb5ea2ebb891b149cab0faec6154f664f24585c6cc25cad293186	362953
+/home/huyudi/015_plasmo/data/derived/WP2/M2-02_aa/M2-02_aa_residual_table.tsv	2017eaf497fd2bd6ba9906f8dd29be97a93e45d587c394821ceb69e36fc66374	110598
+/home/huyudi/015_plasmo/data/derived/WP1/M1-01_composition/M1-01_composition_table.tsv	9a52a2fda4535b61cd22b47c01405e9a140aa03fa50e7335a574468e65c44e13	8838
+/home/huyudi/015_plasmo/data/derived/WP2/M2-01_codon/M2-01_background_explained.tsv	f7cf11b7b25e9e22e6050fa26cc8d2c42d745fb7819d348edf9487d22c71b1a6	82974
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000002765.6/ncbi_dataset/data/GCF_000002765.6/cds_from_genomic.fna	d912c122a4e77140d653b31ad0f576c175c48b4b9cb6c18e496889411b6407e4	14379150
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000006355.2/ncbi_dataset/data/GCF_000006355.2/cds_from_genomic.fna	7ca4da766d28e489c241866a627a0a7a21dd2013e47b7c30bbb9c3b5c4408c97	13116965
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_900002375.2/ncbi_dataset/data/GCF_900002375.2/cds_from_genomic.fna	868816ca757c82cdfdeb07c53e270ecd171bcbfbd162bec30622695ec5bd9303	11614856

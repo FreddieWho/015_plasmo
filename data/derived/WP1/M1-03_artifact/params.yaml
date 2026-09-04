@@ -1,0 +1,5 @@
+method: assembly_gff_scan + lowEntropy_window64_thresh1.5 + homopolymer_from_M1-01
+window: 64
+entropy_thresh: 1.5
+sampling: first ~5Mb nuclear per species non-overlapping windows
+correlation: pearson

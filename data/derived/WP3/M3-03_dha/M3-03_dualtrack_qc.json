@@ -1,0 +1,8 @@
+{
+  "masked_genes":"5274",
+  "did_rows_masked":"656",
+  "early_primary_hits_masked":"0",
+  "early_primary_hits_unmasked":"0",
+  "spearman_DiD_cross_track":"0.9991313488895635",
+  "verdict_robust":"True"
+}

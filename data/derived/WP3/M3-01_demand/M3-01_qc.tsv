@@ -1,0 +1,7 @@
+metric	value
+seed	42
+geo_n_HT_files	12
+primary_match	13/36
+match_CI95	[0.22457614358043185, 0.537790999831836]
+binom_p	0.13249816396273675
+caveats	['HS_ tRNA reference is human-annotated; anticodon-aggregated supply proxy only', 'families are not independent trials; binomial is auxiliary descriptive', 'n=3 species with expression; no cross-species regression fitted (I3)']

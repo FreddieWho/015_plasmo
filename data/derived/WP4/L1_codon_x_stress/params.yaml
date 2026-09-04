@@ -1,0 +1,26 @@
+analysis_id: L1_codon_x_stress
+date: 2026-09-04
+mode: exploratory (D-019, no preregistration; replication gate governs claims)
+seed: 20260904
+bootstrap_B: 1000
+genome:
+  accession: GCF_000002765.6 (Pf 3D7, cds_from_genomic.fna)
+  min_cds_len: 150
+  lcr_mask: 30aa window Shannon entropy < 1.5 (dual-track)
+discovery:
+  dataset: GSE151189 (GPL18893 two-color microarray, log2 ratio vs 3D7 pool)
+  backgrounds: [Dd2_WT, Dd2_R539T, Dd2_C580Y]
+  times_primary: "<=6h (3h, 6h; Cam3II excluded: 8h DHA n=1)"
+  model: resp ~ feature + gc3 + time
+  response: mean(log2ratio DHA reps) - mean(log2ratio CTRL reps), >=2 non-NA per arm
+replication:
+  dataset: GSE226632 (htseq counts, CM vs AA_free x total/polysome x 3rep)
+  te: log2((polysome+1)/(total+1)) per replicate, mean over reps; dTE = TE_AA_free - TE_CM
+  model: dTE ~ feature + gc3
+focus_features: [AAA_freq, AAG_freq, AAA_share, ATT_freq, ATCATA_freq]
+exploration: all 61 sense codon frequencies (labeled exploratory)
+thresholds:
+  discovery: q_bh < 0.05, same sign in >= 2 of 3 Dd2 backgrounds
+  replication: same sign, q_bh < 0.10
+provenance_notes: platform probe->gene mapping parsed in-script from data/raw/geo/GPL18893/GPL18893_family.soft.gz (fixes M3-03 /tmp provenance gap for this analysis)
+env: sc conda python + LD_PRELOAD libstdc++ (D-011)

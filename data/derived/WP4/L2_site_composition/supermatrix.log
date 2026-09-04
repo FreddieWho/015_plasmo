@@ -1,0 +1,202 @@
+IQ-TREE version 3.1.3 for Linux x86 64-bit built Jul 26 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    wanglab-98 (AVX512, FMA3, 1007 GB RAM)
+Command: /home/huyudi/.conda/envs/sc/bin/iqtree -s /home/huyudi/015_plasmo/data/derived/WP4/L2_site_composition/supermatrix.faa -m MFP -T 8 -pre /home/huyudi/015_plasmo/data/derived/WP4/L2_site_composition/supermatrix
+Seed:    374541 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Sep  5 01:06:53 2026
+Kernel:  AVX+FMA - 8 threads (64 CPU cores detected)
+
+Reading alignment file /home/huyudi/015_plasmo/data/derived/WP4/L2_site_composition/supermatrix.faa ... Fasta format detected
+Reading fasta file: done in 0.0211089 secs using 92.17% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.088361 secs using 709.3% CPU
+WARNING: 4 sites contain only gaps or ambiguous characters.
+Alignment has 16 sequences with 60502 columns, 21336 distinct patterns
+19044 parsimony-informative, 11966 singleton sites, 29492 constant sites
+       Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000617981 secs using 618.3% CPU
+   1  SP001    8.38%    failed      0.00%
+   2  SP002    9.06%    failed      0.00%
+   3  SP003    8.80%    failed      0.00%
+   4  SP004    8.33%    passed     95.30%
+   5  SP005    8.39%    passed     45.93%
+   6  SP006    9.82%    passed     41.62%
+   7  SP007    8.26%    passed     51.24%
+   8  SP008    8.11%    failed      0.00%
+   9  SP011    8.22%    failed      0.00%
+  10  SP012    8.27%    failed      0.00%
+  11  SP013    8.32%    failed      0.00%
+  12  SP014    8.61%    failed      0.00%
+  13  SP015    9.43%    failed      0.00%
+  14  SP016    9.76%    failed      0.00%
+  15  SP017    9.05%    failed      0.00%
+  16  SP018    5.45%    failed      0.00%
+****  TOTAL    8.52%  12 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 0.00194812 secs using 712.1% CPU
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.077 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -539477.738
+2. Current log-likelihood: -539473.846
+3. Current log-likelihood: -539470.668
+4. Current log-likelihood: -539467.962
+5. Current log-likelihood: -539465.626
+6. Current log-likelihood: -539463.600
+7. Current log-likelihood: -539461.837
+8. Current log-likelihood: -539460.299
+9. Current log-likelihood: -539458.950
+10. Current log-likelihood: -539457.765
+11. Current log-likelihood: -539456.719
+Optimal log-likelihood: -539455.734
+Proportion of invariable sites: 0.203
+Gamma shape alpha: 0.769
+Parameters optimization took 11 rounds (4.272 sec)
+Time for fast ML tree search: 8.065 seconds
+
+NOTE: ModelFinder requires 527 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 60502 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+Akaike Information Criterion:           Q.YEAST+F+I+R4
+Corrected Akaike Information Criterion: Q.YEAST+F+I+R4
+Bayesian Information Criterion:         Q.YEAST+F+I+R4
+Best-fit model: Q.YEAST+F+I+R4 chosen according to BIC
+
+All model information printed to /home/huyudi/015_plasmo/data/derived/WP4/L2_site_composition/supermatrix.model.gz
+CPU time for ModelFinder: 13475.527 seconds (3h:44m:35s)
+Wall-clock time for ModelFinder: 1698.127 seconds (0h:28m:18s)
+
+NOTE: 211 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -536372.547
+2. Current log-likelihood: -536321.430
+3. Current log-likelihood: -536320.055
+4. Current log-likelihood: -536319.564
+5. Current log-likelihood: -536319.268
+6. Current log-likelihood: -536319.032
+7. Current log-likelihood: -536318.847
+8. Current log-likelihood: -536318.693
+9. Current log-likelihood: -536318.542
+10. Current log-likelihood: -536318.397
+11. Current log-likelihood: -536318.260
+12. Current log-likelihood: -536318.129
+13. Current log-likelihood: -536318.003
+14. Current log-likelihood: -536317.881
+15. Current log-likelihood: -536317.769
+16. Current log-likelihood: -536317.659
+17. Current log-likelihood: -536317.557
+Optimal log-likelihood: -536317.402
+Proportion of invariable sites: 0.281
+Site proportion and rates:  (0.412,0.337) (0.246,1.386) (0.045,5.054) (0.016,18.487)
+Parameters optimization took 17 rounds (16.337 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.00451016 secs using 737% CPU
+Computing ML distances took 0.005781 sec (of wall-clock time) 0.042353 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 7.29561e-05 secs using 832% CPU
+Constructing RapidNJ tree: done in 0.000485897 secs using 213.6% CPU
+Computing RapidNJ tree took 0.000594 sec (of wall-clock time) 0.002059 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -536390.358
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 8.103 second
+Computing log-likelihood of 98 initial trees ... 13.187 seconds
+Current best score: -536317.402
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -536317.272
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -536242.066
+Iteration 10 / LogL: -536320.810 / Time: 0h:29m:16s
+Iteration 20 / LogL: -536318.092 / Time: 0h:29m:37s
+Finish initializing candidate tree set (4)
+Current best tree score: -536242.066 / CPU time: 62.287
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -536317.137 / Time: 0h:29m:59s (0h:4m:10s left)
+Iteration 40 / LogL: -536321.487 / Time: 0h:30m:26s (0h:3m:23s left)
+Iteration 50 / LogL: -536317.236 / Time: 0h:30m:54s (0h:2m:46s left)
+Iteration 60 / LogL: -536317.684 / Time: 0h:31m:24s (0h:2m:12s left)
+Iteration 70 / LogL: -536317.679 / Time: 0h:31m:54s (0h:1m:40s left)
+Iteration 80 / LogL: -536317.491 / Time: 0h:32m:21s (0h:1m:7s left)
+Iteration 90 / LogL: -536243.393 / Time: 0h:32m:52s (0h:0m:36s left)
+Iteration 100 / LogL: -536243.770 / Time: 0h:33m:17s (0h:0m:6s left)
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:33m:30s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -536242.066
+2. Current log-likelihood: -536242.023
+3. Current log-likelihood: -536241.927
+4. Current log-likelihood: -536241.836
+5. Current log-likelihood: -536241.750
+6. Current log-likelihood: -536241.678
+7. Current log-likelihood: -536241.607
+8. Current log-likelihood: -536241.538
+9. Current log-likelihood: -536241.472
+10. Current log-likelihood: -536241.410
+11. Current log-likelihood: -536241.353
+12. Current log-likelihood: -536241.294
+13. Current log-likelihood: -536241.237
+14. Current log-likelihood: -536241.181
+15. Current log-likelihood: -536241.126
+16. Current log-likelihood: -536241.073
+17. Current log-likelihood: -536241.025
+18. Current log-likelihood: -536240.980
+19. Current log-likelihood: -536240.932
+20. Current log-likelihood: -536240.885
+21. Current log-likelihood: -536240.839
+22. Current log-likelihood: -536240.793
+23. Current log-likelihood: -536240.755
+24. Current log-likelihood: -536240.722
+25. Current log-likelihood: -536240.689
+26. Current log-likelihood: -536240.659
+27. Current log-likelihood: -536240.629
+28. Current log-likelihood: -536240.608
+29. Current log-likelihood: -536240.578
+30. Current log-likelihood: -536240.558
+31. Current log-likelihood: -536240.529
+32. Current log-likelihood: -536240.510
+33. Current log-likelihood: -536240.482
+34. Current log-likelihood: -536240.464
+35. Current log-likelihood: -536240.437
+36. Current log-likelihood: -536240.419
+37. Current log-likelihood: -536240.400
+38. Current log-likelihood: -536240.382
+39. Current log-likelihood: -536240.362
+40. Current log-likelihood: -536240.351
+41. Current log-likelihood: -536240.336
+42. Current log-likelihood: -536240.317
+Optimal log-likelihood: -536240.303
+Proportion of invariable sites: 0.283
+Site proportion and rates:  (0.419,0.343) (0.239,1.423) (0.044,5.360) (0.014,19.539)
+Parameters optimization took 42 rounds (30.036 sec)
+BEST SCORE FOUND : -536240.303
+Total tree length: 3.022
+
+Total number of iterations: 103
+CPU time used for tree search: 2348.123 sec (0h:39m:8s)
+Wall-clock time used for tree search: 294.695 sec (0h:4m:54s)
+Total CPU time used: 16201.543 sec (4h:30m:1s)
+Total wall-clock time used: 2040.188 sec (0h:34m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                /home/huyudi/015_plasmo/data/derived/WP4/L2_site_composition/supermatrix.iqtree
+  Maximum-likelihood tree:       /home/huyudi/015_plasmo/data/derived/WP4/L2_site_composition/supermatrix.treefile
+  Likelihood distances:          /home/huyudi/015_plasmo/data/derived/WP4/L2_site_composition/supermatrix.mldist
+  Screen log file:               /home/huyudi/015_plasmo/data/derived/WP4/L2_site_composition/supermatrix.log
+
+Date and Time: Sat Sep  5 01:40:53 2026

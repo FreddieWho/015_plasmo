@@ -1,0 +1,22 @@
+# Dataset Audit
+
+- dataset_id:
+- source/accession:
+- official URL:
+- organism/strain:
+- modality:
+- raw/processed:
+- release/version:
+- license/terms:
+- expected samples/files:
+- observed samples/files:
+- assembly/gene ID version:
+- download size:
+- checksum status:
+- metadata completeness:
+- known biases:
+- mapping requirements:
+- current gate use:
+- suitability: ACCEPT / CONDITIONAL / REJECT
+- reason:
+- next action:

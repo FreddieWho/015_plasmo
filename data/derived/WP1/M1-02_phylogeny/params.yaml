@@ -1,0 +1,7 @@
+k: 21
+sketch: 10000
+hash: crc32_stride20
+method: kmer_Jaccard_NJ_rooted_Tg
+tip_gc_source: M1-01_composition_table.tsv
+ancestral_method: squared_change_parsimony_mean_children
+clades: ['Laverania', 'avian', 'coccidian', 'malariae_ovale', 'piroplasm', 'rodent', 'vivax_knowlesi']

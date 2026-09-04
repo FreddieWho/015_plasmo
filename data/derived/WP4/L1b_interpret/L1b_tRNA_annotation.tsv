@@ -1,0 +1,6 @@
+feature	aa	codon	decoder	known_mods	lit_anchor
+AAT_freq	Asn	AAT	tRNA-Asn-GUU (wobble reads AAT/AAC)	no s2U (not U34 Lys/Glu/Gln class); queuosine at U34 of Asn tRNA reported in other eukaryotes	Small-Saunders 2024 NatMicrobiol (s2U class); Q-tRNA literature
+GTT_freq	Val	GTT	tRNA-Val-GAC / IAC	inosine I34 class reads T/C-ending; no s2U	standard wobble annotation
+GTC_freq	Val	GTC	tRNA-Val-GAC	same Val family	standard wobble annotation
+GCT_freq	Ala	GCT	tRNA-Ala-CGC/GGC family	no s2U; GC-start codons, low abundance in AT-rich Pf	standard wobble annotation
+GCC_freq	Ala	GCC	tRNA-Ala-GGC	same Ala family	standard wobble annotation

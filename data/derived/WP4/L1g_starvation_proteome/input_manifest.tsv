@@ -1,0 +1,5 @@
+file	sha256	size
+/home/huyudi/015_plasmo/data/raw/suppl/LI2024_ISCIENCE/mmc3.xlsx	8cc04eb40f75567a77d4e8bae8adf060ce2e4c3885c0d71ee76eec7b93da8922	462021
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000002765.6/ncbi_dataset/data/GCF_000002765.6/cds_from_genomic.fna	d912c122a4e77140d653b31ad0f576c175c48b4b9cb6c18e496889411b6407e4	14379150
+/home/huyudi/015_plasmo/data/derived/WP4/L1_codon_x_stress/L1_GSE226632_dTE.tsv	d32f76e3967a1da9244c5fe92569788a716a7f07575cb64edc685d182cb02629	188831
+/home/huyudi/015_plasmo/data/derived/WP4/L1f_riboseq_te/L1f_te_by_stage.tsv	7243cf7562735e936d771aaab5705977a6eecedc6f9a14ce5327c506e93e1297	150502

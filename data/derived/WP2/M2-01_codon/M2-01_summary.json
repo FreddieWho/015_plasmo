@@ -1,0 +1,14 @@
+{
+  "n_species_with_cds": 16,
+  "median_prop_explained_masked": 0.8451106633918046,
+  "median_prop_explained_unmasked": 0.845161735539066,
+  "n_tests": 288,
+  "n_tests_masked_sig_q05": 284,
+  "n_tests_unmasked_sig_q05": 283,
+  "frac_sig_masked": 0.9861111111111112,
+  "n_robust_aa_5of7": 8,
+  "robust_aa_list": "F,L,I,P,A,N,D,E",
+  "phylo_gls_n_sig_p05": 6,
+  "cross_lineage_replicated": true,
+  "mean_spot_identity": 0.9982484106651485
+}

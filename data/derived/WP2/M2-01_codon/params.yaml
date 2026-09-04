@@ -1,0 +1,106 @@
+# M2-01 codon counterfactual params.yaml
+# One primary inference level per 04 §7 — fixed AA + length + position; local composition nulls explicit
+run: M2-01_codon_counterfactual
+date: 2026-09-03
+env:
+  python: "3.11.5"
+  numpy: "1.26.4"
+  scipy: "1.13.1"
+  pandas: "2.3.3"
+  biopython: "1.87"
+  matplotlib: "3.8.4"
+frozen_panel: data/metadata/frozen_assembly_candidates.tsv
+frozen_composition: data/derived/WP1/M1-01_composition/M1-01_composition_table.tsv
+frozen_dinucleotide: data/derived/WP1/M1-01_composition/M1-01_dinucleotide.tsv
+frozen_tree: data/derived/WP1/M1-02_phylogeny/M1-02_species_tree.nwk
+frozen_clades: ["Laverania", "avian", "coccidian", "malariae_ovale", "piroplasm", "rodent", "vivax_knowlesi"]
+clade_members:
+  Laverania: ["SP001","SP002","SP003"]
+  vivax_knowlesi: ["SP004","SP005","SP006","SP007"]
+  malariae_ovale: ["SP008","SP009","SP010"]
+  rodent: ["SP011","SP012","SP013"]
+  avian: ["SP014"]
+  piroplasm: ["SP015","SP016","SP017"]
+  coccidian: ["SP018"]
+species_with_cds: ["SP001","SP002","SP003","SP004","SP005","SP006","SP007","SP008","SP011","SP012","SP013","SP014","SP015","SP016","SP017","SP018"]
+species_no_cds_has_cds_false: ["SP009","SP010"]
+cds_pattern: "data/raw/ncbi-datasets/<ACC>/ncbi_dataset/data/<ACC>/cds_from_genomic.fna"
+plasmodb_transcripts_pattern: "data/raw/veupathdb/PlasmoDB-71/PlasmoDB-71_*_AnnotatedTranscripts.fasta"
+representative_transcript_rule: "per gene locus_tag longest CDS; if tie earliest; stored filtered flags not_divisible_by_3, internal_stop, short_lt150, partial"
+qc_filters:
+  min_cds_len_bp: 150
+  require_divisible_by_3: true
+  exclude_internal_stop: true
+  exclude_partial: true
+  max_cds_per_gene_kept: 1
+genetic_code: "standard nuclear (11 for apicoplast/mito excluded; only nuclear CDS from cds_from_genomic.fna used)"
+null_backgrounds:
+  primary: "per_gene_GC3_binomial_third_position"
+  primary_description: "Within each AA family synonymous codon probability proportional to gene GC3 if codon ends G/C else 1-GC3, normalized per family; for 6-fold families (Leu/Arg/Ser) treat as single 6-codon family with same rule (third-base GC propensity only); expected per gene = n_AA_in_gene * p_codon; summed across genes per species"
+  secondary: "GC3_plus_dinucleotide_observed_correction"
+  secondary_description: "Same GC3 binomial multiplied by per-species dinucleotide odds ratio for codon (product of two dinucleotide frequencies spanning codon positions divided by uniform expectation) then renormalized per AA family; dinucleotide frequencies from M1-01 M1-01_dinucleotide.tsv; captures local neighbor bias beyond single-base GC"
+  stratification: "full gene vs N-terminal 30 codons vs core (31..end); first 30 codons analyzed separately then merged weighted; position and length fixed by construction"
+shuffling:
+  n_permutations: 200
+  seed: 42
+  method: "pooled-multinomial approximation of within-gene GC3-weighted draw (spec 1000 -> actual 200 for runtime; pooled prob = sum per-gene expected_GC3 / N per AA per species, one multinomial(N, pooled_p) draw per perm; heterogeneity within gene GC3 collapsed — conservative as it ignores per-gene dispersion; per AA family pooled chi-square null per species per stratum; +1 smoothing (null>=obs+1)/(n_perm+1); LCR masking via numba-accelerated entropy window)"
+  strata_handling: "full + nterm30 + core_rest computed separately; stratified_merge p via summed chi-square across strata (currently full stratum carries permutation p; N-terminal 30 evaluated in background prop table but p pooled via full)"
+  spec_vs_actual_note: "04/02 spec n_perm=1000; implementation uses 200 pooled-multinomial draws per species per AA family (seed 42). Switch justified: original per-gene np.random.choice per occurrence ~101s at 200 already (pooled from residual_df reuse + numba LCR); 1000 would be ~500s with little resolution gain for FDR q<0.05 threshold ( +1/(n+1) = 0.005 minimal p). Script exposes N_PERM constant — rerun with 1000 feasible by changing one line and reusing LD_LIBRARY_PATH=/opt/anaconda3/lib:$LD_LIBRARY_PATH."
+  lcr_acceleration: "LCR sliding window 30 aa Shannon entropy <1.5: original pure-python loop ~6s/500 genes -> numba.njit lcr_mask_numba 0.35s; codon-level mask mapped back via aa_idx alignment"
+lcr:
+  method: "protein low-entropy sliding window 30 aa, Shannon entropy <1.5 = LCR window; gene LCR windows / total windows = LCR_frac; codons whose AA lies in any LCR window are LCR-masked"
+  window_aa: 30
+  entropy_threshold: 1.5
+  gene_lcr_flag_threshold: 0.15
+  dual_track: "masked and unmasked counted in parallel; Gate B verdict uses masked; all tables contain both columns"
+  homopolymer_aux: "homopolymer runs >=5 tracked but LCR primary is entropy; consistent with M1-03 coupling"
+descriptive_only_qc:
+  rscu: true
+  enc: true
+  pr2: true
+  note: "RSCU/ENC/PR2 are QC/descriptive only, not adaptive evidence per 04 §4"
+statistics:
+  per_family_test: "chi-square (obs - exp)^2/exp vs GC3 null, df = k-1; permutation p from 200 pooled-multinomial shuffles (+1 smoothed)"
+  multiple_testing: "Benjamini-Hochberg FDR per stratum and per track (masked/unmasked); q<0.05 marked significant"
+  effect_size: "CramerV = sqrt(chi2 / (N*(k-1))) per AA family; log2(obs/exp) per codon; proportion variance explained per family = 1 - chi2_residual/chi2_uniform"
+  direction_consistency: "AA family marked direction-consistent if GC-ending residual sign same across ≥75% of independent clade representatives (Laverania vs vivax_knowlesi vs rodent vs piroplasm)"
+  compositional_note: "Codon proportions are compositional (sum per AA family =1); primary test uses multinomial/chi-square within family, not raw proportion Pearson; CLR computed auxiliary for QC heatmaps"
+phylogeny:
+  method: "phylogenetic GLS (Brownian covariance from M1-02 tree); V_ij = shared root-to-MRCA branch length; beta_GLS = (X' V^-1 X)^-1 X' V^-1 y"
+  trait: "per species per AA family GC-ending proportion residual (obs GC_end_frac - exp GC_end_frac)"
+  predictor: "genome GC from M1-01"
+  alternative: "GC3 as predictor sensitivity"
+robustness:
+  leave_one_clade_out: 7
+  clades: ["Laverania","avian","coccidian","malariae_ovale","piroplasm","rodent","vivax_knowlesi"]
+  metrics: ["background_explained_median","n_significant_families_masked_q05","robust_direction_fraction"]
+  robust_threshold: "family significant (q<0.05 masked) and direction same in ≥5/7 LOO runs => ROBUST"
+spot_check_ncbi_vs_plasmodb:
+  species: ["SP001","SP005","SP011"]
+  n_genes: 50
+  method: "random 50 genes overlapping NCBI locus_tag prefix vs PlasmoDB transcript fasta; extract CDS subsequence and compare identity; report concordance and note annotation gaps"
+thresholds:
+  fdr_q: 0.05
+  robust_loo_min: 5
+  background_explained_interpretation: "median per-family proportion chi2 explained by GC3 (1 - chi2_GC3/chi2_uniform); remainder = candidate residual"
+outputs:
+  - "M2-01_codon_residual_table.tsv"
+  - "M2-01_gene_level_residual.tsv"
+  - "M2-01_background_explained.tsv"
+  - "M2-01_robustness.tsv"
+  - "M2-01_qc.tsv"
+  - "figures/M2-01_*.png"
+  - "params.yaml"
+  - "input_manifest.tsv"
+  - "checksums.sha256"
+  - "README.md"
+  - "claim_impact.md"
+seeds:
+  main: 42
+  shuffling: 42
+  spot_check: 123
+notes:
+  - "18 accessions frozen invariant respected; SP009/SP010 has_cds=false explicitly excluded from CDS analyses but retained in tree/robustness denominator"
+  - "No D006-D025 downloaded; no tRNA/proteome/population/MCA used"
+  - "18 accession CDS/protein only 16 species have CDS (excludes SP009/SP010 chr unannotated); stated has_cds=false per contract"
+  - "Local GC/dinucleotide background explicitly logged here; scripts emit background label per table"

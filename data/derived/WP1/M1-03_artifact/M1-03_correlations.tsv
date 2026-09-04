@@ -1,0 +1,8 @@
+artifact_metric	pearson_r_with_genomeGC	n	interpretation
+total_len_Mb	0.338	18	not strongly confounded
+n50_kb	0.611	18	confounded if |r|>0.6
+n_percent	-0.141	18	not strongly confounded
+num_contigs	0.354	18	not strongly confounded
+cds_density_per_Mb	0.096	18	not strongly confounded
+homopolymer_per_Mb	-0.840	18	confounded if |r|>0.6
+lcr_frac_lowEntropy	-0.817	18	confounded if |r|>0.6

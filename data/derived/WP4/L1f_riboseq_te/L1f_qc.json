@@ -1,0 +1,33 @@
+{
+  "n_genes": 802,
+  "spearman_Asn_vs_TE46over2": -0.06418196164143895,
+  "spearman_p": 0.06927132075803531,
+  "spearman_Asn_vs_TE19over2": 0.3495716205936991,
+  "spearman19_p": 1.824249628676032e-24,
+  "median_late_over_ring_AsnTop10": -0.05499752109238507,
+  "median_late_over_ring_rest": -0.06841048074400531,
+  "MW_p_AsnTop10_rises": 0.38577097992812687,
+  "spearman_AAT_vs_TE46over2": -0.06346269607949834,
+  "median_log2TE_profile": {
+    "2h_ring": {
+      "AsnTop10": -0.950750274406447,
+      "rest": -0.6638076522078433
+    },
+    "10h_latering": {
+      "AsnTop10": -0.9001856230322425,
+      "rest": -0.5721466009605927
+    },
+    "19h_troph": {
+      "AsnTop10": -0.5598203466598441,
+      "rest": -0.3161793846638647
+    },
+    "31h_latetroph": {
+      "AsnTop10": -0.27071553580453117,
+      "rest": -0.3263959497030044
+    },
+    "46h_schizont": {
+      "AsnTop10": -1.2284677536437727,
+      "rest": -0.6640459246868771
+    }
+  }
+}

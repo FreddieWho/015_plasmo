@@ -1,0 +1,17 @@
+{
+  "align_qc_pass": 175,
+  "align_qc_total": 181,
+  "v2_sites": 29558,
+  "H2a_v2": {
+    "n_coupled": 223,
+    "n_other": 9662,
+    "median_grantham_coupled": 77.33333333333333,
+    "median_grantham_other": 66.9,
+    "frac_conservative_lt100_coupled": 0.9103139013452914,
+    "frac_conservative_lt100_other": 0.8828399917201407,
+    "median_diff": 10.433333333333323,
+    "p_more_radical": 0.0004997501249375312
+  },
+  "tree": "ok_run1",
+  "seed": 20260904
+}

@@ -1,0 +1,22 @@
+{
+  "AAT_freq": {
+    "discovery_bgs_surviving_pos1": 3,
+    "replication_survives_pos1": true
+  },
+  "GTT_freq": {
+    "discovery_bgs_surviving_pos1": 3,
+    "replication_survives_pos1": false
+  },
+  "GTC_freq": {
+    "discovery_bgs_surviving_pos1": 1,
+    "replication_survives_pos1": false
+  },
+  "GCT_freq": {
+    "discovery_bgs_surviving_pos1": 3,
+    "replication_survives_pos1": false
+  },
+  "GCC_freq": {
+    "discovery_bgs_surviving_pos1": 3,
+    "replication_survives_pos1": false
+  }
+}

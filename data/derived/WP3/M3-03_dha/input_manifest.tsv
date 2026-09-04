@@ -1,0 +1,5 @@
+file	sha256	size
+/home/huyudi/015_plasmo/data/raw/geo/GSE151189/GSE151189_series_matrix.txt.gz	80150d63f724312545bd27b4a1dcd224e74692e73b11f4eb1f5e32edcc909d03	8761492
+/home/huyudi/015_plasmo/data/raw/ncbi-datasets/GCF_000002765.6/ncbi_dataset/data/GCF_000002765.6/cds_from_genomic.fna	d912c122a4e77140d653b31ad0f576c175c48b4b9cb6c18e496889411b6407e4	14379150
+/home/huyudi/015_plasmo/data/raw/geo/GPL18893/GPL18893_family.soft.gz	4bed8a87627f3eb645e3aaba945c2b0ac843e8bd5e3d3a4af43e1a945fea50b8	258778894
+/home/huyudi/015_plasmo/data/derived/WP3/M3-03_dha/platform_GPL18893_probe2gene.tsv	0c2c9ff7c794dd4fe7faf60e3fad2dd3fa4f1c58cf9c1047d55e112a11d3c878	273134
