@@ -1,0 +1,25 @@
+# Sub-Agent Task Packet — M4R-A ROUND2
+
+- task_id: M4R-A-ROUND2
+- parent milestone/WP/gate: M4R / WP4R / M4R_CONVERGENCE（parallel functional route，与 D 并行；C维持不参与）
+- linked claim_id: CLM09（主）+ CLM10-H-A（hypothesis）
+- scientific question: InterPro 正式集下富集是否复现？严格 PUF 集能否构建并检验？lifecycle 三极映射是否有 BH 通过的 state-consequence？
+- input files and versions (ALL IN HAND — no new downloads):
+  - data/derived/WP4R/M4R-A/ round-1 全套（run_m4ra.py 复用；M4RA_formal_enrichment.tsv 为 regex 基线，不可当正式集引用）
+  - NCBI GFF Dbxref InterPro（data/raw/ncbi-datasets/GCF_*.6；先验 GCF_000002765.6==Pf3D7 并用 Dbxref GeneID→PF3D7 映射；不符停下报缺）
+  - data/raw/geo/GSE75795/（gametocyte，round-1 已解析流程）+ data/raw/geo/GSE222586/（zygote/蚊期极：`;`分隔，5713行矩阵+metadata；series matrix 2.4K 空壳不用）+ data/raw/geo/GSE220039/（Pf肝期：raw_counts 64列 Day0-6 GFP/NoGFP + stats；Pv臂不用）
+  - data/manual_inbox/pmc10627835_tmp/ 8 xlsx（MOESM3-10）：使用前必须先验身份（sheet 名/表头与 AP2-P depletion 论文一致才可用；无法验证→UNRESOLVED 不用）
+  - data/manual_inbox/M4R_PBAPIAP2_2017/content/（mmc1.pdf + mmc2-6.zip + mmc7.pdf）：先 inventory 列每表内容；Pb 物种属性→只作 family-wide map，不作 Pf 表达证据
+  - Puf1（PMC5004898/JCS，非OA）：SI 快径不可达已定论（D-038），不许再试下载；GAP-4 维持
+- allowed methods:
+  - InterPro 正式富集：GFF Dbxref→每基因 InterPro 集合；AP2 domain（运行时从数据核对 IPR 号，不许背号码）/ Pumilio domain（同）/ chromatin / CCR4-NOT / RNA-binding 正式集；Fisher OR+CI+BH q + length/LCR-adjusted logit，与 regex 基线并排比较（一致/消失如实报）
+  - 严格 PUF 集：Pumilio-domain 基因名单（预期 ~10–20 个；若仍只有 2–3 个则报集不可判，CLM09 不得写 PUF）
+  - lifecycle 三极映射：gametocyte（GSE75795）+ zygote（GSE222586）+ liver（GSE220039 Pf）：Asn/LCR/IDR feature × stage 对比，统一 BH；state-consequence 宣称要求 ≥2 极同向且至少一极 BH 通过，否则维持探索标签
+  - perturbation 表达：PfAP2-P（身份验后）/ PbApiAP2（map only）与 Asn 轴交叉；GCN5 维持阳性对照引用
+  - shortlist 1–3 候选：仅当统计成立（BH-pass state consequence + perturbation/natural 链）才收；附四机制区分表
+- forbidden extrapolations: 同 ROUND1 包全部禁令 + regex 集结果不许当正式集引用 + Pb 数据不许当 Pf 表达证据 + 不得新下载（SRA/Pv臂/AlphaFold）+ 单极阳性不许宣布 co-option
+- required outputs: data/derived/WP4R/M4R-A/ 新增 M4RA_interpro_* / M4RA_strictPUF.tsv / M4RA_lifecycle_tripole.tsv / M4RA_perturbation_xwalk.tsv (+shortlist 如成立) + M4R-A_ROUND2_REPORT.md（含 A-functional verdict 更新）+ claim_impact.md 追加段 + input_manifest 追加行。不覆盖 round-1 文件。
+- QC: length/LCR/IDR-fraction/baseline-expression/annotation-detection 控制；三极方向一致性表；单 atlas 依赖声明；身份未验数据零引用
+- compute guardrails（强制）: 同 D 包（timeout 套壳；MWU asymptotic；退化组跳过；checkpoint；禁裸 ls -R；GSE220039 12万行矩阵分块读，单步超 500s 两次即记 UNRESOLVED 转下一项）
+- acceptance: InterPro 富集表（含与 regex 基线对比列）+ 严格PUF表 + 三极映射表 + perturbation 交叉表 + claim_impact 追加
+- return format: 输入版本 + 方法参数 + 输出路径 + QC/失败 + 支持/削弱 claim + 禁止外推声明

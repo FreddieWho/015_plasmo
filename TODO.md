@@ -6,7 +6,11 @@
     - [x] A：正式 enrichment + lifecycle 映射 + 候选收缩（本轮不收shortlist）
     - [x] C：stage-adjusted DHA + acute/chronic + feature 分解 + 独立 ART 验证 + dTE upgrade
 - [x] M5 convergence review round-1（2026-09-05，D-037：D+A leading，D+C第二context，降级暂不执行；见docs/M5_CONVERGENCE_REPORT_M4R_ROUND1.md）
-- [ ] M4R round-2 bounded增量（D6形式化+Pf8；A lifecycle两集+perturbation表达；C维持）→ M5终审
+- [ ] M4R round-2 bounded增量 → M5终审（D-038 启动；C维持不加模态）
+    - [ ] D2b 全蛋白组归属（不限core-181，Figure 3生死项）
+    - [ ] D6形式化（≥2独立transitions预注册pole对比；AP2/PUF wide OGs）+ branch-LOO + D3多维匹配
+    - [ ] Pf8群体边界（Zenodo 7文件已入库；SNP-level deferred）
+    - [ ] A lifecycle映射（GSE222586/GSE220039已入库）+ PfAP2-P/PbApiAP2表达 + InterPro正式集 + 严格PUF集；成立则收1–3候选
 
 - [x] M4R T1 数据准备（2026-09-05：GEO 六集 + GCN5 全套 VERIFIED，~540MB；essentiality/K13scRNA 转人工）
     - [x] GEO：GSE75795/GSE120448/GSE134268/GSE120488/GSE225340/GSE59099 落盘+manifest+sha256

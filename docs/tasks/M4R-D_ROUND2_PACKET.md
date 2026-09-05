@@ -1,0 +1,26 @@
+# Sub-Agent Task Packet — M4R-D ROUND2
+
+- task_id: M4R-D-ROUND2
+- parent milestone/WP/gate: M4R / WP4R / M4R_CONVERGENCE（round-2 bounded；C维持不参与）
+- linked claim_id: CLM08（主）+ CLM03/CLM01 + CLM09（D5部分）
+- scientific question: D2b 全蛋白组归属能否让 Figure 3 架构论断存活？D6 形式化后自然实验证据是否成立？D1 是否经得起 branch-LOO？
+- input files and versions (ALL IN HAND — no new downloads):
+  - data/derived/WP4R/M4R-D/ round-1 全套（run_m4rd.py / round2 / round3 脚本可复用函数：lcr_mask、parse_aln、LOGC/HIGC pole 定义；M4RD_D1_branch_substitutions.tsv 等）
+  - PlasmoDB-71 Pf3D7 全蛋白组 AnnotatedProteins.fasta（D2b 全蛋白组底；核对 input_manifest）
+  - NCBI GFF Dbxref InterPro 注释（GCF_*.6 genomic.gff 在 data/raw/ncbi-datasets/；先验 GCF_000002765.6==Pf3D7，不符则停下报缺）
+  - 16 物种蛋白序列 data/raw/ncbi-datasets/（D6 wide OGs；kmerRBH 宽 OG 表如在手则复用）
+  - mafft：~/.conda/envs/sc/bin/mafft（round-1 已用）
+  - data/manual_inbox/M4R_PF8_2026/ 7 文件（samples/marker-genotypes/FWS/CNV/breakpoints/classification + README；列格式见 D-038）
+  - essentiality 三篇 processed 表（D3 多维匹配用；在手路径见 round-1 input_manifest）
+- allowed methods:
+  - D2b：coupled位点 Pf 成员 → 全蛋白组 LCR/IDR/domain 坐标映射；与全蛋白组背景比（控制 length/OG-age/expression）；必须含采样框偏差声明（core-181 排除 LCR 重蛋白）。结论只允许 SURVIVES / DOWNGRADED 二选一 + 理由。
+  - D6：沿用 LOGC(SP001-003)/HIGC(SP004-007) pole 定义为预注册对比；AP2/PUF wide OGs（kmerRBH 宽表或重建）+ mafft；要求 ≥2 独立 transitions 各自报告（不许 n=4 混池讲故事）；CHROM 作 null 对照保留。
+  - branch-LOO：D1 concordance pipeline 原样重跑 7 次（每次去一 clade），报告 OR/CI 范围与 coupled-vs-uncoupled Fisher 是否全程显著。
+  - D3：conservation 匹配基础上加 domain（InterPro）+ essentiality（Zhang/Elsworth）维度；若某维度不可匹配则降名为 conservation-matched only 并说明。
+  - Pf8：marker-genotypes 表验证已知耐药位点在群体中分离（D3 的群体层支持）；FWS 作 subset QC；CNV 表做 LCR-adjacent 扩增 bounded 检查。SNP-level burden 不做（已 deferred，写进报告）。
+- forbidden extrapolations: 同 ROUND1 包全部禁令 + 不得新下载（Pf8 Zarr/VCF、AlphaFold、SRA 一律不碰）+ 不得把 D2b 框内结论外推框外（或反之）+ 不得因 D6 某单 transition 阳性宣布成立（要求≥2独立）
+- required outputs: data/derived/WP4R/M4R-D/ 新增 M4RD_D2b_* / M4RD_D6formal_* / M4RD_D1_LOO.tsv / M4RD_D3_multidim.tsv / M4RD_D4_Pf8boundary.tsv + M4R-D_ROUND2_REPORT.md（含 Figure-3 verdict）+ claim_impact.md 追加段 + input_manifest 追加行。不覆盖 round-1 文件。
+- QC: LCR caller 双轨（convention + ≥1 sensitivity）；effect size + CI；uncertainty 位点剔除前后；per-transition 独立报告
+- compute guardrails（强制；违反即停下修脚本不硬等）: 每个 shell/python 调用套 timeout；mannwhitneyu 一律 method='asymptotic'（exact 在 ties 组组合爆炸，round-1 两轮超时根因）；nunique<10 或 n<100 的组跳过并记录；每子任务落盘 checkpoint；禁止裸 ls -R；mafft 单条序列超时 300s，失败记 UNRESOLVED 不重试超过 2 次
+- acceptance: D2b 表 + verdict二选一；D6 per-transition 表；LOO 7 行表；D3 多维表或降名声明；Pf8 boundary 表 + SNP-deferred 声明；claim_impact 追加
+- return format: 输入版本 + 方法参数 + 输出路径 + QC/失败 + 支持/削弱 claim + 禁止外推声明
