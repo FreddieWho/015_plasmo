@@ -1,0 +1,15 @@
+source	contrast	n	test	stat	p	note
+PfAP2-P_trunc_DE	16 h.p.i.	4345	spearman(asn,DElogFC)	0.10350446759156931	7.970561850102666e-12	
+PfAP2-P_trunc_DE	16 h.p.i.	2193	MW Asn(UPpadj.05 vs DOWNpadj.05)	724494.0	8.733596864805089e-17	up_med=0.124 down_med=0.109
+PfAP2-P_trunc_DE	40 h.p.i.	4839	spearman(asn,DElogFC)	-0.054306934565650285	0.0001571043504526081	
+PfAP2-P_trunc_DE	40 h.p.i.	3645	MW Asn(UPpadj.05 vs DOWNpadj.05)	1504532.0	9.244905111107351e-07	up_med=0.117 down_med=0.125
+PfAP2-P_trunc_DE	8 h.p.i.	3770	spearman(asn,DElogFC)	-0.10658165095720788	5.356575697145723e-11	
+PfAP2-P_trunc_DE	8 h.p.i.	53	MW Asn(UPpadj.05 vs DOWNpadj.05)	351.0	0.7920265459593352	up_med=0.130 down_med=0.128
+PfAP2-P_trunc_DE	30 h.p.i.	4653	spearman(asn,DElogFC)	-0.03409240094211516	0.020040285087483872	
+PfAP2-P_trunc_DE	30 h.p.i.	81	MW Asn(UPpadj.05 vs DOWNpadj.05)	990.5	0.005403176023013489	up_med=0.123 down_med=0.078
+PfAP2-P_bound	16 h.p.i.	5285	MW Asn(bound vs unbound)	1346912.5	7.102786740243082e-35	n_bound=928 med 0.0922 vs 0.1218
+PfAP2-P_bound	16 h.p.i.	5285	Fisher bound x Asn-top10	1.0169896613534997	0.8996937284952338	overlap=84
+PfAP2-P_bound	16 h.p.i.	5285	Fisher bound x AP2(IPR001471)	4.609257164404223	0.00045121097235849126	overlap=11
+PfAP2-P_bound	40 h.p.i.	5285	MW Asn(bound vs unbound)	817630.0	9.121152975824269e-16	n_bound=514 med 0.0902 vs 0.1200
+PfAP2-P_bound	40 h.p.i.	5285	Fisher bound x Asn-top10	1.0548861270582297	0.7399341211170233	overlap=46
+PfAP2-P_bound	40 h.p.i.	5285	Fisher bound x AP2(IPR001471)	2.2188505747126435	0.13314185258370392	overlap=4

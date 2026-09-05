@@ -29,3 +29,9 @@
 - 候选 shortlist 本轮不收（统计成立标准未达：lifecycle 端 BH 未过 + n=1 + ChIP 单研究）。
 
 ## Verdict：CONDITIONAL（A 作为 functional pillar 条件性成立，详见 M4R-A_ROUND1_REPORT.md）
+
+## ROUND2 追加（2026-09-05）
+- CLM09：AP2 正式集（IPR001471，运行时从数据解析，bg=24 完全特异）OR=35.3 vs regex 34.3，逐值复现；严格 PUF n=2 不可判（PUF1 富集/PUF2 不富集），repeatbroad null；RNA_binding 衰减但存活（1.67）；chromatin 正式集转阳（1.98）；CCR4-NOT 衰减至 n.s.；transcription 正式集退化；sexual_gametocyte formal == AP2 集（不 double-count）；logit 调整 OR=1.97。anchor 发现用 product 文本（Asn 检验独立于选择），正式性弱于人工 GO——已声明。
+- CLM10-H-A：三极中 liver BH-pass 但 detection 对照推翻（NoGFP 检出不对称 p=3.7e-11；检出控制后 n=80 null）→ 排除；zygote null；gametocyte 弱方向维持探索。state-consequence 标准未达，不收 shortlist。
+- Perturbation：PfAP2-P 身份已验；DE 方向不一致；bound 基因 Asn-贫（p~1e-35/1e-16，top10 OR≈1）→ bounding 证据（家族组成 vs 单因子 regulon 分层）；PbApiAP2 map 落盘（27 尝试/11 verified/9 transmission-blocked），交叉 n=2 不可检验。
+- Verdict：CONDITIONAL 不变。详见 M4R-A_ROUND2_REPORT.md。

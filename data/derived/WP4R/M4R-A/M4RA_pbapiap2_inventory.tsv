@@ -1,0 +1,11 @@
+file	kind	content
+mmc1.pdf	pdf	unparsed (no pdf tool); main-text supplement assumed
+mmc7.pdf	pdf	unparsed (no pdf tool); extended supplement assumed
+mmc2.zip:Data_1.xlsx:AP2KOscreen	xlsx	dims 31x10 | header: (None, 'Summary of available vectors and knock-out attempts.', None, None, None, None, None, None, None, None)
+mmc2.zip:Data_1.xlsx:Phenotyping	xlsx	dims 39x18 | header: (None, 'Phenotyping of the generated mutants.', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+mmc3.zip:Data_S2.xlsx:DE analysis	xlsx	dims 4847x40 | header: (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, Non
+mmc3.zip:Data_S2.xlsx:Enriched biological processes	xlsx	dims 193x7 | header: (None, None, None, None, None, None, None)
+mmc4.zip:Data_S3.xlsx:Cluster assignment	xlsx	dims 4857x6 | header: (None, 'Genes clustered by co-expression across apiAP2 knock-out mutants and stages.', None, None, None, None)
+mmc4.zip:Data_S3.xlsx:GO terms enrichment	xlsx	dims 1558x9 | header: (None, 'GO terms enrichment analysis of the co-expressed gene clusters', None, None, None, None, None, None, None)
+mmc6.zip:Data_S5.xlsx:Transcriptome	xlsx	dims 4906x6 | header: (None, 'Transcriptome deregulation in the purified schizonts of ap2-g/ap2-g2 double knockout compared to the parental ap2-g mutant clone.', None, None, None, None)
+mmc6.zip:Data_S5.xlsx:Proteome	xlsx	dims 2173x6 | header: (None, 'Proteome deregulation in the purified schizonts of ap2-g/ap2-g2 double knockout compared to the parental ap2-g mutant clone.', None, None, None, None)

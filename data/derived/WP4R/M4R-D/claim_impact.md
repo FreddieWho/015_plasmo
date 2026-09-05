@@ -53,3 +53,33 @@
   directionally; uncertainty disclosed in aux table).
 - Convention LCR caller uninformative on proteins (reported, sensitivity thr2.0 shown).
 - Association only — no mechanism claimed.
+
+## ROUND2 append (M4R-D-ROUND2)
+- D2b verdict: SURVIVES (frame-internal). Coupled-harboring Pf genes (91) are NOT more LCR-rich
+  than length/age-matched background (lcr med 0.0 vs 0.0, MW p=0.10; strat-diff 0.0); they are
+  Asn-DEPLETED (0.064 vs 0.119, p=3.9e-33) with shorter polyN (2 vs 3, p=2.4e-18) and MORE
+  InterPro domains (5 vs 1, p=5.7e-28) — structured conserved proteins, not repeat proteins.
+  Frame bias quantified: core-181 members shorter (259 vs 472 aa, p=7.8e-23) and Asn-poorer
+  (0.056 vs 0.120, p=4.9e-75) than non-core; "churn not repeat-confined" holds WITHIN frame.
+- D6 formal: 2/3 transitions composition-consistent. T2_GC_vivax: AP2 4/4 (p=0.0625),
+  PUF_RNA 21/27 (p=0.0030); T3_rodent: AP2 3/4, PUF_RNA 18/25 (p=0.022); T1_AT_Lav negative
+  (AP2 2/4, PUF 9/25; registered polarity tiny: 0.19 vs 0.18 GC — weak transition by construction).
+  CHROM null flat on all 3. Support rule (>=2 independent) MET by T2+T3.
+- Branch-LOO: coupled-vs-uncoupled Fisher OR range 1.71 (vivax-drop, p=0.0065) to 4.35
+  (piroplasm-drop); significant in all 7. Weakest under vivax-drop (high-GC pole removed).
+  Piroplasm-drop threshold jumps to 0.142 (dGC compression) — disclosed.
+- D3 multidim (partial upgrade): domain-shared bg where available — K13/Kelch 531 sites @4.5%
+  coupled vs known 0%; MDR1/ABC 5056 sites @2.0% vs known 0% (broad domain, weak restriction);
+  CRT/DHFR/DHPS have no domain-shared core sites (family absent from core set).
+  Within-OG control structurally impossible (all 14 known-gene OGs absent from core alignments —
+  fast-evolving drug genes fail QC; consistent with D6 frame finding). Zhang MIS parsed
+  (K13/CRT/DHFR/MDR1 all 0.12–0.13, dispensable-bin); matched-ess analysis deferred as
+  uninformative (no MIS contrast among the 5 genes). Scope renamed: conservation-matched +
+  domain-shared where available.
+- Pf8 boundary: 34/34 markers segregating (call rate ~1.0); crt76 derived 0.56, dhfr51 0.83,
+  dhfr108 0.95 (strict single-clone subset consistent). Adaptation segregates in populations
+  at cross-species-conserved sites — D3 separation holds at population layer.
+  CNV: GCH1 0.28, PM2/PM3 0.28, MDR1 0.20, CRT 0.086 amplifications; HRP2/3 deletions ~0.45.
+  SNP-level burden DEFERRED (Zarr streaming beyond round-2 budget).
+- Prohibited extrapolations respected: no mechanism language; T1 negative kept (not rescued);
+  D2b claim kept frame-internal; no new downloads.
