@@ -1,0 +1,33 @@
+# Sub-Agent Task Packet — M4R-C
+
+- task_id: M4R-C-ROUND1
+- parent milestone/WP/gate: M4R / WP4R / M4R_CONVERGENCE（parallel functional route，保持怀疑并行探索）
+- linked claim_id: CLM10-H-C（hypothesis，主）+ CLM04（boundary context）+ CLM09（feature 分解衔接）
+- scientific question: stage/confounder 修正后 ART signal 还剩多少？Asn/LCR/regulator signal 在 acute vs chronic 两端是否独立成立？
+- input files and versions:
+  - data/derived/WP4/L1_codon_x_stress/（L1 全扫 DOUBLE_POSITIVE 基线：AAT 超组成双阳；Lys/Ile 未复现）
+  - data/derived/WP4/L1e|L1f|L1g|L1h（蛋白/翻译/饥饿/基因型四环：L1g +0.167 部分阳性；L1h 反号区制；L1f 19h 条件性；L1e 未确认）
+  - data/raw/geo/GSE225340/（persistence/dormancy 端：FPKM 表 processed-first）
+  - Mok 2021 MOESM6/13（manual_inbox/M04_NATCOMM2021_MOK/：chronic protein 端）+ data/raw/geo/GSE59099/（chronic transcript 端）
+  - data/raw/k13scrna/（M4R_K13_SCRNA_2026：14 DGE + sample_map + MELD code；acute×genotype transcript-only，M4R-X01 gap 仍成立）
+  - GSE226632（D006：ratio dTE 现状 DISCOVERY/SUPPORTING；anota2seq interaction 为 upgrade 路径）+ GSE151189（D010：DHA×K13 microarray 阴性基线 EVID-M3-003）
+- allowed methods:
+  - C1：DHA/ART time-course stage 调整（高分辨率 IDC reference 分离 nominal/inferred stage，重算 stage-adjusted response；不可靠则限述不伪造年龄）
+  - C2：acute（treatment response：GSE225340 + K13 scRNA + GSE151189）vs chronic（Mok protein + GSE59099）分开分析；反号只作 hypothesis；acute×genotype（scRNA）优先
+  - C3：Asn feature 分解（whole/structured/IDR/LCR/poly-Asn + matched protein controls），判 signal 归属（chemistry vs LCR/IDR vs length vs developmental programme vs general stress group）
+  - C4：dTE interaction upgrade（normalized polysome/total、condition×fraction interaction、anota2seq 或等价 replicate-aware；四规则：同向存活→升级 / 同向降显著→弱支持 / 翻转→调查降级 / 无法重建→保留探索标签）
+  - C5 措辞：supply claim 只用 capped 语言（decoding demand high / supply may-constitute-constraint / consistent-inconsistent），由数据定
+- forbidden extrapolations:
+  - 禁止把 acute/chronic 反号解释成已证 mobilization/conservation 机制
+  - 禁止只用 whole-protein Asn fraction 下结论（必须 feature 分解）
+  - 禁止把 mRNA（scRNA/microarray）升级为 translation evidence；禁止用 mRNA proxy 填 M4R-X01 gap
+  - 禁止写 starvation→Asn-tRNA-collapse / Asn-first-to-fail / resistance-implemented-through-axis（已死措辞）
+  - C 退出边界：stage-corrected 弱/阴 + ≥2 独立 ART 数据集无 signal → 收为 boundary/negative，不加模态（防漂移规则）
+- required outputs: data/derived/WP4R/M4R-C/（README + params + manifest + 主结果表 + QC + claim_impact.md），至少：stage-adjusted DHA 表、acute-vs-chronic 分解表、Asn feature 分解表、独立 ART 验证表、dTE upgrade 报告（如可重建）
+- QC requirements: stage-confound 控制（schizont-peak 排除或等价）；replicate-aware 统计；acute/chronic 分区独立报告效应量
+- positive-result interpretation: stage 修正后 ART signal 剩余量 + 是否有独立数据集同向（D+C 的条件）
+- negative-result interpretation: 触发退出边界 → C 收为 boundary/negative result（如实报告，不救援）
+- uncertain-result handling: UNRESOLVED + 点名 acute translation×K13 缺口（M4R-X01，不伪造）
+- compute/download budget: 在手数据；SRA PRJNA1049964 只在需重比对时；禁 bulk raw/protein bulk
+- acceptance criterion: 四表 + dTE 报告 + claim_impact 写明 C-signal verdict（STRONG/CONDITIONAL/WEAK/BOUNDARY + 理由）
+- return format: 输入版本 + 方法参数 + 输出路径 + QC/失败 + 支持/削弱 claim + 禁止外推声明

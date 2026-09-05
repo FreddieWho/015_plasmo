@@ -95,3 +95,10 @@
 - 下一任务及验收条件。
 
 “下次继续分析”不合格。
+
+## 9. M4R 证据规则（2026-09-05，D-036；不搞预注册）
+
+- discovery 可自由探索，不设 outcome-blind 预注册门禁；独立验证优先（同一实验不同 modality = orthogonal evidence，不是 independent biological replication）。
+- exploratory result 不因不是最优模型而自动删除；claim strength 与方法质量相匹配即可（dTE ratio = DISCOVERY/SUPPORTING，interaction 存活 = upgrade）。
+- 防漂移规则（非预注册 Gate）：C 若 stage-corrected 后弱/阴且 ≥2 独立 ART 数据集无 Asn/LCR/regulator signal，则收为 boundary/negative result，不再加模态。
+- 措辞禁令（违反即回退确认性约束）：禁止再写“deliberately designed bottleneck”“Asn is the first supply to collapse”“ART resistance is implemented through this axis”“acute mobilization/chronic conservation”作为已证机制；Asn supply 改用“Asn decoding demand is unusually high / Asn-related translational supply may constitute a constraint / starvation-associated tRNA data are consistent-inconsistent with this hypothesis”（由数据定）；dTE ratio 保留探索标签；acute/chronic 反号只作 hypothesis。

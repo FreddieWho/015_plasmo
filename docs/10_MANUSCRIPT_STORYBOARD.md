@@ -104,3 +104,11 @@
 6. 意义：长期基因组演化限制短期应激响应空间。
 
 不得在摘要中先写靶点数量或模型名称。
+
+## 10. M4R Figure 重构（2026-09-05，D-036）
+
+- **Figure 1：** Plasmodium independent genome-composition transitions（保留 M1）。
+- **Figure 2：** base → codon → amino acid + L2 site-level bridge（composition-coupled substitutions、chemical consequence、known adaptive-site contrast、branch-aware strengthening）。L2 主图固定，不得移出正文、不得因模型可加强而降补充材料。
+- **Figure 3（Route D）：** protein architecture partition（structured / IDR / LCR / regulator modules / cross-lineage natural experiment：conserved domain anchor + intervening IDR/LCR feature）。
+- **Figure 4：** 最强 functional route（A 或 C，第一轮后竞争）。
+- **Figure 5：** 第二 functional context / mechanistic discrimination / minimal experiment。A/C 只一条成立时另一条进 Extended Data / boundary analysis。不保留“每个旧结果必须占一张图”的包袱；旧 Pf AAA/s2U/K13 M4 主线降为 boundary context（如 M5 需要）。

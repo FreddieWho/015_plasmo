@@ -168,3 +168,11 @@ M5 升级验证或公开数据收口与投稿
 - 失败/不确定的返回格式。
 
 子 Agent 无权修改项目状态，只能提交证据；主 Agent 负责合并并更新 Gate。
+
+## 9. M4R 新增（2026-09-05，用户批准，D-036）
+
+Gate C 对旧 codon programme 的 PIVOT 仍有效，不得写成“Gate C 被推翻”。新增 M4R（WP4R）→ M5 convergence：
+
+- **M4R/WP4R（rescue，并行三路线）：** D evolutionary architecture（进化主骨架，Figure 2–3 候选）+ A lifecycle/regulatory LC-IDR + C ART/stress。每路线一个 bounded T05 packet（docs/tasks/M4R-D|A|C_TASK_PACKET.md），子 Agent 可拆计算子任务但无权改主故事、删负结果、扩新主题、定期刊、把 association 升成 mechanism。
+- **M5（收敛而非扩张）：** 三路线第一轮完成后主 Agent 统一 adversarial review（effect size、phylogenetic robustness、confounder robustness、cross-dataset independence、biological specificity、mechanism discriminability、novelty、Nat Micro relevance），选择最终 integrated story（D / D+A / D+C / D+A+C / 或仍不足回降级）。
+- L2 正文固定（Figure 2 必含）；D 正文固定（强化后不崩的前提下）；A/C 竞争 Figure 4–5 slots，落选者进 Extended Data / boundary analysis。

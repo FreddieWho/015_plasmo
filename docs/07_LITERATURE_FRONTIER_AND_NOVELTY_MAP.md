@@ -116,3 +116,13 @@ Agent 不应把“检索到相关论文”视为完成文献工作。每篇锚�
 - Gate B：对选定主轴进行一次针对性更新；
 - M4：在锁定稿件故事前再次检索最近 12 个月；
 - 发现高度重合研究时立即创建 change request，不等待写稿阶段。
+
+## 7. M4R 文献更新（2026-09-05，Search Supplement 落地，D-036）
+
+- **NT-1 NOVELTY_THREAT：** Rubiano et al. Nat Commun 2026（DOI 10.1038/s41467-026-74632-6，PMID 42323337）PfGCN5 poly-Asn repeat deletion + PyGCN5 complement = perturbation + natural-sequence experiment。删除任何“first functional repeat” claim；rescope 到 AP2/PUF-axis + dynamics + lifecycle-state + axis-separation；cite-and-complement（GCN5 单基因座 vs 本项目 family-wide axis）。
+- **NT-2 guarded complement：** Sinha et al. 2025 t6A/PfSua5 acute-MOA（PMC12407977）——不同修饰位点（t6A-ANN vs s2U-Lys）+ acute≠chronic 分区，引用不争竞。
+- **NT-3 boundary：** Small-Saunders 2024 Lys/s2U/K13 是 Lys axis 前例；本项目是 Asn axis + composition dynamics；K13 AAA-tail 事实确认引用，不重复。
+- **PA-1 fenced prior art：** Chaudhry 2018 / Battistuzzi 2016 比较 LCR（AT/LCR 耦合存在性已描述）；本项目增量 = phylogeny-controlled churn + compartment + adaptation-axis separation with controls。
+- **PA-2 fenced control：** Hamilton 2017 MA（D005 在手）单物种突变谱；跨物种分解仍是本项目。
+- **D 近似 prior art 结论：** D 的跨谱系 architecture 描述若只做到“AT 富集伴随 LCR 膨胀”则与 PA-1 重合；D 的真正新 claim 必须锚定 branch-aware turnover + compartment partition + adaptive-axis separation（三者缺一即降级为 confirmatory）。
+- **AP2/PUF/GCN5/Hsp110 边界：** GCN5 单基因座功能证明是阳性对照不是竞争；AP2/PUF family-wide enrichment 仍是本项目待证候选；Hsp110c（ncomms2306）为 Asn-rich proteostasis 旁证；Pb ApiAP2 screen（PMC5241200）、PfAP2-P（PMC10627835）、PfPuf1 KO（PMC5004898）为 lifecycle-state consequence 独立支撑。

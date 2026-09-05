@@ -1,0 +1,31 @@
+# Sub-Agent Task Packet — M4R-A
+
+- task_id: M4R-A-ROUND1
+- parent milestone/WP/gate: M4R / WP4R / M4R_CONVERGENCE（parallel functional route，与 D 并行）
+- linked claim_id: CLM09（主）+ CLM10-H-A（hypothesis）+ CLM08（D 骨架衔接）
+- scientific question: composition-shaped regulatory protein regions 是否与生命周期状态转换存在真正功能连接（超越“regulators are Asn-rich”）？
+- input files and versions:
+  - data/derived/WP4/L1d_aat_function/（keyword 富集 TSV + disentangle.json：AP2 Asn 24.2% vs 12%；AAT share n.s. —— 起点非终点）
+  - data/raw/geo/GSE75795/（gametocyte；series matrix + metadata，processed-first）
+  - data/raw/geo/GSE222586-GSE220039（注：按 m4r_dataset_candidates 登记的 lifecycle trio；以实际入库为准，如未入库则先报缺不猜测）
+  - data/raw/geo/GSE120448 + GSE134268 + GSE120488（AP2-G ChIP trio；已纠正为 ONE study PMID 32198457：occupancy anchor，intra-study orthogonal only）
+  - data/raw/pmc/M4R_GCN5_2026/（MOESM1-7：repeat-deletion + Py-complement processed tables；POSITIVE_CONTROL + NOVELTY_THREAT）
+  - PfAP2-P（PMC10627835）/ PfPuf1 KO（PMC5004898）/ Hsp110c（ncomms2306）/ Pb ApiAP2 screen（PMC5241200）：processed-first 公共表
+- allowed methods:
+  - A1：标准 annotation（GO/InterPro/curated sets）正式 enrichment，输出 effect size + 区间（不只 p）；gene sets：ApiAP2、PUF/RNA-binding、chromatin、CCR4-NOT、transcription/translation regulation、sexual/mosquito/liver sets；手工关键词不作最终证据
+  - A2：lifecycle trio + MCA 阶段表达映射 composition/IDR feature × 状态转换（sexual commitment、male/female gametocyte、gametocyte maintenance、gamete/ookinete/oocyst、sporozoite、liver、blood-transition）；高分辨 time course / perturbation / scRNA / protein 优先；不让单一 Pf atlas 扛全部结论
+  - A3（仅统计成立后）：收 1–3 主候选（已有 perturbation + D 自然比较可连者优先；不因讨论过某基因而固定）
+  - A4：每候选四竞争机制（translation/tRNA limitation、proteostasis、IDR assembly、generic stage effect）用公共数据先区分；无法区分且候选承重时才提湿实验需求（不设计具体实验）
+- forbidden extrapolations:
+  - 不得把 AP2/PUF enrichment 当机制（enrichment ≠ co-option）
+  - 不得把 Asn-rich 等同 poly-Asn；不得把 IDR 等同 phase separation
+  - 不得 claim repeat-function novelty（NT-1：cite-and-complement GCN5，锚定 axis + dynamics）
+  - 不得因单一位点阳性就宣布 lifecycle co-option 成立（family-wide axis 仍是待证候选）
+- required outputs: data/derived/WP4R/M4R-A/（README + params + manifest + 主结果表 + QC + claim_impact.md），至少：正式 enrichment 表（含 effect size）、lifecycle 映射表、候选 shortlist（如成立，1–3 个 + 四机制区分表）
+- QC requirements: length/LCR/IDR-fraction/baseline-expression/annotation-detection/OG-age 控制；多数据集方向一致性；单 atlas 依赖声明
+- positive-result interpretation: 是否出现超越“Asn-rich”的 lifecycle/transmission evidence（state-transition consequence + perturbation/natural-experiment 链）
+- negative-result interpretation: enrichment 被 IDR/length 解释完或无状态后果 → 如实报告，A 降为 boundary
+- uncertain-result handling: UNRESOLVED + 点名缺的 matched perturbation+expression 同背景数据
+- compute/download budget: 在手 T1 processed-first；SRA/raw 只在能区分机制时 Gate-justified；禁 bulk raw
+- acceptance criterion: enrichment 表 + lifecycle 映射表 + claim_impact 写明 A-functional verdict（STRONG/CONDITIONAL/WEAK + 理由）
+- return format: 输入版本 + 方法参数 + 输出路径 + QC/失败 + 支持/削弱 claim + 禁止外推声明

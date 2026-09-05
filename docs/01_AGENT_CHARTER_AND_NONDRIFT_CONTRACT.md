@@ -116,6 +116,16 @@ Gate B 评审后必须选择 `TRANSLATION_PRIMARY`、`PLASTICITY_PRIMARY` 或 `S
 | 自然或既有扰动支持 | “支持功能作用/条件依赖” | “充分证明因果” |
 | 决定性扰动或等价自然实验 | “机制上导致/必要或足够” | 超出实验物种、阶段和条件的普遍化 |
 
+## 7b. M4R Amendment（2026-09-05，用户批准的 bounded rescue）
+
+**Change record：D-036（见 DECISIONS.md）。** Gate C 对“跨谱系 codon-stress programme”（旧 H3 跨物种版）的 PIVOT 仍然有效；被重新开放的不是旧假说，而是新的 composition→protein→function 问题。旧负结果（EVID-M3-001/003、Gate C PIVOT）永久保留，不得回写、删除旧 DECISIONS。
+
+**I9 修订：** “Gate B 后只能一条主轴”修订为——项目只有一个 scientific backbone（`COMPOSITION_TO_PROTEIN_FUNCTION`），但允许在 discovery/rescue 阶段并行运行有限数量、共享同一主骨架的 functional routes。当前 backbone = COMPOSITION_TO_PROTEIN_FUNCTION；route D = evolutionary backbone implementation；route A/C = parallel functional routes。并行路线必须在预定 convergence review（M5）收敛，不允许发展成长期互不相关项目。
+
+**I5 解释修订：** 若信号只存在于 LCR/IDR，不得自动降为“artifact”或只能归入 CNV/plasticity；可进入 `LCR/IDR-specific functional biology`，但必须明确其适用区室（structured vs IDR vs LCR vs poly-Asn tract），并按 04 addendum 做 whole-protein Asn feature decomposition。
+
+**I12 重申：** target_journal 仍为 Nature Microbiology（证据标准），T01 降级文件标记为 SUPERSEDED_FOR_NOW / PENDING_M5_REASSESSMENT，不删除。
+
 ## 7. 项目退出也必须可复现
 
 若 stop 或降级，Agent 必须保留：

@@ -150,3 +150,13 @@ D_{c,s,t}=\sum_g E_{g,s,t}N_{g,c}
 - QC 与敏感性结果；
 - `claim_impact.md`：支持/削弱哪些 Claim 和 Gate；
 - 环境/软件版本。
+
+## 11. M4R 分析增补（2026-09-05，D-036）
+
+- **branch-aware site analysis：** 高质量 ortholog alignment → ancestral AA reconstruction → substitution 映射到 species-tree branches → 每 branch 定义 composition change → 判断 observed AA replacement 是否与 branch GC/AT change 同向；branch 为独立信息单位；不可靠位点标记 uncertainty 后排除，不用复杂 Bayesian machinery 强救。terminal correlation 保留为 descriptive layer。
+- **codon accessibility：** 每替换报告最少 nucleotide changes、GC→AT/AT→GC direction、synonymous/nonsynonymous accessibility。
+- **structured/IDR/LCR partition：** composition-coupled vs uncoupled 位点映射到 structured domain / conserved domain / IDR / LCR / homopolymer-repeat / linker / TM / signal / catalytic-binding（如可靠）/ exposure-confidence（仅可靠候选）；至少控制 protein length、local conservation、orthogroup、LCR/IDR availability、gene functional class、annotation quality。不得预设信号集中 IDR；structured 内的 radical churn 如实解释。
+- **matched adaptive-site controls：** 每个 known adaptive/resistance site 匹配 conservation、protein/domain、structural context、essentiality/constraint（如可得）、alignment quality 相当的 background sites，再比 coupling/turnover/accessibility/Grantham/population variation。若匹配后差异消失，保留弱结论（canonical resistance mutations occur at highly constrained sites, whereas composition-driven turnover dominates a different part of sequence space），不硬称“双适应轴”。
+- **whole-protein Asn feature decomposition：** 禁止只用 whole-protein Asn fraction；至少同时测试 whole / structured / IDR / LCR / poly-Asn tract Asn + matched protein controls，判断 ART signal 归属（Asn chemistry vs LCR/IDR vs length vs developmental programme vs general stress group）。
+- **stage-adjusted ART：** DHA/ART time-course 能推断 developmental age 时用高分辨率 IDC reference 分离 nominal time 与 inferred stage，重算 stage-adjusted response；不能可靠推断时明确限制。acute 与 chronic 分开分析，禁止把反号直接解释成 mobilization/conservation 机制（仅 hypothesis）。
+- **dTE evidence hierarchy：** 现有 GSE226632 ratio-based dTE 保留，状态 DISCOVERY/SUPPORTING；normalized polysome/total、condition×fraction interaction、anota2seq 或等价 replicate-aware model 为 upgrade 而非 hard validity gate。新模型同向存活→升级；同向但 significance 下降→保留弱支持；系统性翻转→调查并降级；无法重建→保留探索标签。不把方法学完美主义变成删除发现的理由。

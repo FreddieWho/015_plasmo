@@ -1,0 +1,34 @@
+# Sub-Agent Task Packet — M4R-D
+
+- task_id: M4R-D-ROUND1
+- parent milestone/WP/gate: M4R / WP4R / M4R_CONVERGENCE（evolutionary backbone implementation，最高计算优先级）
+- linked claim_id: CLM08（主）+ CLM03/CLM01（支撑）+ CLM09（regulatory enrichment 部分）
+- scientific question: 组成驱动的蛋白 turnover 按蛋白区室如何分布？它与经典适应位点是否不等价？branch-aware 强化后 L2 是否存活？
+- input files and versions:
+  - data/derived/WP4/L2_site_composition/L2v2_site_table.tsv + L2v2_adaptive_substitutions_grantham.tsv + L2v2_alignment_qc.tsv + supermatrix.treefile（ML 树）+ claim_impact.md（L2 v2 双结论基线）
+  - data/derived/WP4/L1d_aat_function/L1d_top40_AAT_genes.tsv（Asn 候选基因引子，非结论）
+  - data/raw/ncbi-datasets/（16 CDS 物种蛋白序列，按 input_manifest 版本）
+  - M4R-D02 essentiality processed tables（data/raw 下已入库：Elsworth Data_S3 核心 + Oberstaller + Zhang；matched-background constraint 用）
+  - D005 Hamilton MA supplement（mutation-source control 引子）
+  - docs/M4R_SEARCH_SUPPLEMENT_20260905.md §2（D verdict CONDITIONAL + GAP-1 声明）
+- allowed methods:
+  - D1：高质量 OG alignment 祖先 AA 重建（parsimony/fastML 级即可）→ substitution→branch 映射 → branch composition change 定义 → 同向性检验 → genetic-code accessibility（最少 nt 变化、GC→AT/AT→GC 方向、syn/non-syn 可达性）；不可靠位点标 uncertainty 排除
+  - D2：coupled vs uncoupled × 区室映射（structured/conserved-domain/IDR/LCR/homopolymer/linker/TM/signal/catalytic-binding 可靠子集）；控制 length/conservation/OG/LCR-availability/gene-class/annotation-quality；IDR/LCR 注释用已有 InterPro/seg 方法重跑 Pf 蛋白组即可，不批全蛋白组 AlphaFold
+  - D3：每个 known adaptive/resistance site 做 matched background（conservation/domain/context/essentiality/alignment-quality）再比 coupling/turnover/accessibility/Grantham/population variation
+  - D5：Asn/LCR/IDR 九特征分解 + AP2/PUF/chromatin/RNA regulators 正式富集 + IDR 反事实（given comparable IDR，regulatory IDRs 是否异常 Asn 富集）
+  - D6：conserved-domain anchor + intervening IDR/LCR feature 跨谱系比较（domain 保守性/IDR 长度/chemistry/repeat/GC-AT 方向），找 ≥2 独立 transitions
+  - D4（仅 if 数据允许）：Pf8 processed subset 低频/罕见变异 + essentiality 约束边界；回答 turnover 更近 mutational input 还是 fixation 后
+- forbidden extrapolations:
+  - 不得把 terminal correlation 删除（保留 descriptive layer）
+  - 不得因 branch-aware 结果好就宣称因果 mechanism（association 上限）
+  - 不得写 repeat-first / dual-adaptive-axes 强措辞（matched-control 差异消失则保留弱结论）
+  - 不得拉全 AlphaFold DB、深度学习找信号、大规模超参搜索
+  - 不得碰 M4R-X01 gap（resistant×starvation proteome 不存在，不伪造）
+- required outputs: data/derived/WP4R/M4R-D/（README.md + params.yaml + input_manifest.tsv + 主结果表 TSVs + QC/敏感性 + claim_impact.md），至少交付：branch-aware 同向性表、architecture partition 表、matched-control 对比表、regulatory enrichment + 反事实表、natural-experiment 表（如成立）
+- QC requirements: LCR masked/unmasked 双轨；leave-one-clade-out 或等价；uncertainty 位点剔除前后对比；effect size + 区间 + 方向一致性（不只 p）
+- positive-result interpretation: D 能否成为 main evolutionary backbone（Figure 2–3），说明哪几层成立
+- negative-result interpretation: architecture partition 在严格控制后消失 → 如实报告，触发 general-principle 降级建议
+- uncertain-result handling: 标 UNRESOLVED + 缺什么数据能改变判断（具体到 accession/表名）
+- compute/download budget: 只用在手数据；Pf8 如需新 subset 只取 processed 小表（≤2GB），超限先报批；禁 FASTQ/AlphaFold bulk
+- acceptance criterion: 五表齐 + 双轨 QC + claim_impact 明确 D-backbone verdict（STRONG/CONDITIONAL/WEAK + 理由）
+- return format: 输入版本 + 方法参数 + 输出路径 + QC/失败 + 支持/削弱 claim + 禁止外推声明

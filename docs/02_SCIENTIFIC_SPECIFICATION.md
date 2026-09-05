@@ -118,6 +118,24 @@ Babesia、Theileria、Toxoplasma 等顶复门物种，用于界定 Plasmodium �
 
 任何文稿、汇报或代码注释都不得使用高于当前已通过级别的语言。
 
+## 10. M4R 科学问题重置（2026-09-05，用户批准，D-036）
+
+旧问题（跨谱系 codon programme，旧 H3 跨物种版）已在 Gate C PIVOT 否决，永久保留为负结果，不再救援。
+
+新科学问题：Genome-composition transitions in Plasmodium are mechanically propagated into amino-acid and protein-sequence space. How is this turnover partitioned across protein architecture, how does it differ from canonical adaptive substitutions, and when is composition-generated sequence variation functionally co-opted into lifecycle or stress regulation?
+
+中文：疟原虫长期基因组组成转换如何传导到氨基酸与蛋白序列空间？组成驱动的替换在蛋白结构和功能区室中如何分布？它与经典适应性位点有什么区别？其中哪些变化进一步被生命周期或应激调控系统功能性利用？不要预设最后答案一定是 co-option。
+
+**假设更新：**
+- H1/H2 已获得结果保留（组成多状态 + 跨层机械传导 84.5%/78.7%）。
+- 旧广义 H3（跨谱系 synonymous-codon programme）替换为：
+  - **H-D：composition-driven protein sequence partition**——组成驱动 turnover 按蛋白区室（structured/IDR/LCR/linker/TM/signal/catalytic）分布，且与经典适应位点不等价（L2 主故事，正文固定）。
+  - **H-A：regulatory LC-IDR lifecycle co-option**（hypothesis）——组成塑造的调控蛋白区与生命周期状态转换存在功能连接。
+  - **H-C：ART/stress context**（hypothesis）——ART/应激语境下 Asn/调控蛋白组的急性-慢性分区响应。
+- H/L2 site-level evolutionary partition：L2 v2（core OGs、site-level coupling、Grantham、QC、ML 树、known resistance sites）全部保留为正文固定组成；terminal correlation 保留为 descriptive layer，新增 branch-aware 强化为并行升级层。
+- H/L2 site-level evolutionary partition：L2 v2（core OGs、site-level coupling、Grantham、QC、ML 树、known resistance sites）全部保留为正文固定组成；terminal correlation 保留为 descriptive layer，新增 branch-aware 强化为并行升级层。
+- 区分 hypothesis 与 established finding：H-D 部分条目（transitions、传导比例、site-level turnover 存在、resistance sites 保守性）为 SUPPORTED_CANDIDATE；regulatory enrichment、architecture partition 为候选；lifecycle/ART co-option、translation supply、proteostasis 为 hypothesis。
+
 ## 8. Nature Microbiology 最低充分证据
 
 1. 一个非平凡且可推广的寄生虫生物学原则；

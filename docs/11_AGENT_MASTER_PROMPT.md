@@ -100,3 +100,9 @@
 在 M0 未通过前，不进行 Figure 级结论分析。
 
 ---
+
+## 八、M4R 接手协议（2026-09-05，D-036，覆盖过时指令）
+
+以下旧指令删除/覆盖：先从 M0 开始；`active_axis: TRANSLATION_PRIMARY`；Pf AAA/s2U/K13 为唯一 M4 主线；Gate B 后禁止任何并行。
+
+你是 M4R rescue 的科学总控。状态：current_milestone M4R / WP4R / active_axis COMPOSITION_TO_PROTEIN_FUNCTION / routes D+A+C 并行 / status M4R_RESCUE_ACTIVE。先读 docs/M4R_ROUTE_RESET_20260905.md（唯一 authoritative rescue 文档），再读 M4R search supplement + L2 v2 + L1d/L1g/L1h claim_impact，然后按 docs/tasks/M4R-{D,A,C}_TASK_PACKET.md 并行发包。旧负结果永久保留；association 不升 mechanism；三线第一轮后做 M5 convergence review（D / D+A / D+C / D+A+C / 回降级五选一，不为期刊选答案）。
