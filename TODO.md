@@ -54,3 +54,4 @@
 
 - 2026-09-05：M4R rescue 启动（D-036 用户授权）：M4R-0 完成 + package 1.1-M4R + state（M4R/WP4R/COMPOSITION_TO_PROTEIN_FUNCTION/D+A+C/M4R_RESCUE_ACTIVE）+ claim 重审计（CLM08/09/10）+ ROUTE_RESET 权威文档 + M4R-D/A/C 三包并行。原因：M4 Asn/L2 新发现 + search supplement 三线锚点；旧 Gate C PIVOT 保留不推翻。
 - 2026-09-05：M4R round-1完成（D-037）：D/A worker回包CONDITIONAL + C主Agent收尾CONDITIONAL（修MWU exact-hang）；M5 convergence判D+A leading；EVID-M4R-D/A/C-001入账。原因：三线第一轮是M4R→M5的约定收敛点；C两轮worker超时须如实记录并换主Agent有界收尾。
+- 2026-09-05：对抗性审阅完成（docs/M4R_ADVERSARIAL_REVIEW_20260905.md）：无目标偏移；修复 git 提交/PACKAGE_MANIFEST 失效 59 项/bioinf-data-index 缺失/CHANGELOG v1.1/ROADMAP R4R/STATUS 进度条；gate M4R_CONVERGENCE 状态改 HOLD（信息增益任务=round-2）。待办：D2b 全蛋白组归属（Fig3 生死项）、D6 形式化、A InterPro 正式集、C 措辞修正（16/27 存活+弱 stage 参考）。
