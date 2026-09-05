@@ -1,0 +1,6 @@
+seed: 20260905
+env: sc (LD_PRELOAD libstdc++)
+mwu_method: asymptotic  # exact hangs on tied single-rep groups
+stage_ref: MCA pf-ch10x pseudobulk ring-vs-schizont vector
+fdr: BH per contrast
+degenerate_skip: nunique<10 or n<100

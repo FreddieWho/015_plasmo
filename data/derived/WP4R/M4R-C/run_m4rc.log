@@ -1,0 +1,58 @@
+A: protein features...
+  n=5389 AsnTop10 thr=0.1837 AP2=34 PUF=4 CHROM=38 RNAB=55
+B: MCA stage reference...
+  stage_HR: {'trophozoite': 4477, 'ring': 1251, 'schizont': 765}
+  genes=5063 stages=['ring', 'schizont', 'trophozoite'] schizont-peak n=1618
+C: stage-adjusted DHA...
+  [ckpt C_DHA] contrasts=54 rows=540
+D1: GSE225340 persistence...
+  ring=3 early=12 late=26
+  DORM_LATE_vs_Rings n=3651 med=0.485
+  DORM_EARLY_vs_Rings n=3455 med=-0.053
+  [ckpt D1_persist] contrasts=56 rows=560
+D2: K13 scRNA...
+  MRA1250_2hDHA: cells=20000 genes_ok=5360
+  MRA1250_2hDMSO: cells=20000 genes_ok=5355
+  MRA1250_4hDHA: cells=20000 genes_ok=5392
+  MRA1250_4hDMSO: cells=20000 genes_ok=5404
+  MRA1250_6hDHA: cells=20000 genes_ok=5308
+  MRA1250_6hDMSO: cells=20000 genes_ok=5222
+  MRA1250_Ctrl: cells=20000 genes_ok=5354
+  MRA1251_2hDHA: cells=20000 genes_ok=5390
+  MRA1251_2hDMSO: cells=20000 genes_ok=5352
+  MRA1251_4hDHA: cells=20000 genes_ok=5344
+  MRA1251_4hDMSO: cells=20000 genes_ok=5353
+  MRA1251_6hDHA: cells=20000 genes_ok=5313
+  MRA1251_6hDMSO: cells=20000 genes_ok=5241
+  MRA1251_Ctrl: cells=20000 genes_ok=5376
+  scRNA_WT_2h_DHAvsDMSO n=5255 med=0.186
+  scRNA_580Y_2h_DHAvsDMSO n=5255 med=0.199
+  scRNA_DiD_2h n=5255 med=0.019
+  scRNA_WT_4h_DHAvsDMSO n=5255 med=0.055
+  scRNA_580Y_4h_DHAvsDMSO n=5255 med=0.196
+  scRNA_DiD_4h n=5255 med=0.072
+  scRNA_WT_6h_DHAvsDMSO n=5255 med=0.418
+  scRNA_580Y_6h_DHAvsDMSO n=5255 med=0.137
+  scRNA_DiD_6h n=5255 med=-0.287
+  [ckpt D2_scRNA] contrasts=65 rows=650
+E1: Mok...
+  [ckpt E1_Mok] contrasts=72 rows=720
+E2: GSE59099...
+  pmap cols: ['probe_id', 'gene'] n= 10214
+  matrix (11005, 1153)
+Traceback (most recent call last):
+  File "/home/huyudi/015_plasmo/data/derived/WP4R/M4R-C/run_m4rc.py", line 279, in <module>
+    CH = pd.DataFrame(chars)
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/huyudi/.local/lib/python3.11/site-packages/pandas/core/frame.py", line 782, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huyudi/.local/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 503, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huyudi/.local/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 114, in arrays_to_mgr
+    index = _extract_index(arrays)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huyudi/.local/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 677, in _extract_index
+    raise ValueError("All arrays must be of the same length")
+ValueError: All arrays must be of the same length

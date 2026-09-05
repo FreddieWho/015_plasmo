@@ -49,3 +49,30 @@ researcher 列为候选第三数据；实查为 ITDR 热位移设计（8-23GB/�
 对我们的丰度检验是错误设计；但若未来问"Asn 富集蛋白是否更易热失稳"（应激脆弱性另一角度）可用。
 最小验证：暂不投入；仅在需要热稳定性轴时重新评估。
 状态：已放弃（设计不匹配）
+
+2026/9/5
+## L-006 D2b 全蛋白组 architecture 归属（不限 core-181）
+core-181 采样框排除 LCR 重/快进化蛋白，"churn 不在 LCR"部分由框架构造。
+若 D2b 显示框外 churn 实为 LCR 富集，Figure 3 与 general-principle 强度都要降。
+最小验证：全 Pf 蛋白组 composition-coupled 候选 × LCR/IDR/domain 归属表，一次工作单元。
+状态：待挖掘（round-2 硬项）
+
+2026/9/5
+## L-007 严格 PUF 集构建（PlasmoDB annotation/orthology，非 regex）
+round-1 严格 PUF 仅 2 基因不可判；D 线 56 基因宽集口径不能当 PUF 证据。
+若严格集（~10–20 基因）富集成立，CLM09 才能写 AP2/PUF。
+最小验证：InterPro/ortholog 组 PUF 名单 + 同样富集流程复跑。
+状态：待挖掘（round-2 硬项，并入 A）
+
+2026/9/5
+## L-008 branch-aware LOO 系统发育敏感性
+D1 concordance（OR=2.25）未做 leave-one-clade-out；单枝驱动风险未排除。
+最小验证：7 次 LOO 重跑 concordance/Fisher，几小时计算。
+状态：待挖掘（投稿前必做）
+
+2026/9/5
+## L-009 dTE interaction 正式 anota2seq 复跑
+round-1 interaction 为 OLS+t（df 小，q 仅 1 基因）；规则 2 保留弱支持。
+anota2seq（作者原方法）若同向存活可升级为正式 interaction evidence。
+最小验证：R anota2seq 一次安装 + 12 样本矩阵，半天。
+状态：待挖掘（可选，非 gate）

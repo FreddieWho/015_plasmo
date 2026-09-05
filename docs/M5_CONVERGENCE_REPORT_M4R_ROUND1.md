@@ -7,8 +7,8 @@
 ## 1. D：能否成为 main evolutionary backbone？—— 能，CONDITIONAL
 
 - D1 branch-aware（24,520 mapped subs）：informative branches总体concordance 0.583（p=3.2e-83）；coupled 0.791 vs uncoupled 0.628，Fisher OR=2.25 p=9.5e-10；multi-nt>1-nt accessibility梯度一致。**Branch层已强于terminal层**（terminal保留descriptive）。
-- D2 architecture诚实mixed但利好general principle：core基因~99%耦合turnover落在**非LCR结构化序列**（convention caller在蛋白上0%双组；homopolymer OR=17.5但counts tiny不承重）+ radical chemistry（Grantham 77.3 vs 66.9）→ churn不是repeat故事，general-principle读法成立。
-- D3 matched controls：14/14耐药位点uncoupled；conservation梯度真实（cons=1.0耦合0% vs 0.5处9.1%）→ **保留弱结论**（constrained resistance sites vs turnover elsewhere），不称双轴。
+- D2 architecture诚实mixed：在**保守单拷贝核心基因采样框内**，~99%耦合turnover落在非LCR序列（convention caller在蛋白上0%双组；homopolymer OR=17.5但counts tiny不承重）。**采样框声明：core-181 构造排除 LCR 重/快进化蛋白（AP2/PUF 0 入选），"churn 不在 LCR"部分由框架构造产生；D2b 全蛋白组归属是 Figure 3 生死项，round-2 必做。**
+- D3 conservation-matched controls（仅 conservation 一维匹配，domain/essentiality/structure 维度 round-2 补）：14/14耐药位点uncoupled；conservation梯度真实（cons=1.0耦合0% vs 0.5处9.1%）→ **保留弱结论**（constrained resistance sites vs turnover elsewhere），不称双轴。
 - D5：AP2 MH OR=27.4（p=5.4e-11，2/2层同向）+ PUF OR=3.03 + CHROM null + essentiality约束（AP2 blood-stage可耐受插入→lifecycle-conditional框架）。Counterfactual成立。
 - 短板：D6仅pilot（AP2/PUF不在core-181内，结构性局限；4 OG方向一致但underpowered）；D4仅boundary（Pf8未算）；branch-LOO未跑。
 - **结论：D可扛Figure 2–3（evolutionary backbone），pending round-2形式化。**
@@ -35,32 +35,32 @@
 | effect size | D1 OR 2.25 / AP2 OR 34（CI下限13.8）强；A-state/C-acute小（0.06–0.23） |
 | phylogenetic robustness | D1 branch层天然phylo-aware；branch-LOO待补；A/C单物种（Pf） |
 | confounder robustness | length/LCR/schizont/stage多轨已跑；length衰减是最大诚实减分项 |
-| cross-dataset independence | C-acute双transcript+第三方persistence；A-lifecycle缺第二独立集；D缺Pf8 |
+| cross-dataset independence | C-acute双mRNA数据集（microarray+scRNA，同层非translation）+dormancy集（非acute DHA）；A-lifecycle缺第二独立集；D缺Pf8 |
 | biological specificity | CHROM/proteostasis nulls + AP2-I反向 + chronic转录null = 非万能富集 |
 | mechanism discriminability | 未达（四机制/acute-chronic均只到分区描述；translation层缺失） |
 | novelty | NT-1/PA-1已fence；branch-aware+partition+axis-separation组合仍新 |
 | Nat Micro relevance | D general principle + GCN5 lifecycle proof + ART partition对齐期刊接口 |
 
-**六层充分性：** L1✓ / L2✓+branch / L3✓弱版 / L4✓（structured churn+regulator富集）/ L5半（GCN5单基因座实证+探索性state方向+ART分区）/ L6待（机制判别/最小实验）。
+**六层充分性：** L1✓ / L2✓+branch / L3✓弱版 / L4半（core-OG内 structured churn + regulator富集；全蛋白组归属 D2b 未定）/ L5半（GCN5单基因座实证+探索性state方向+ART分区）/ L6待（机制判别/最小实验）。
 
 ## 5. 五选一
 
 **当前答案：D + A方向（D+A leading），D+C为第二context，D+A+C仅当round-2两表型线同指一机制时采用；降级暂不执行。**
 
-- D backbone CONDITIONAL-strong（Figure 2–3可立）。
+- D backbone CONDITIONAL-strong（Figure 2可立；Figure 3 架构论断待 D2b 全蛋白组归属存活）。
 - A pillar CONDITIONAL（Figure 4候选，待round-2 state-consequence转正）。
 - C partition CONDITIONAL（Figure 5/Extended候选，MOA不指望）。
 - T01维持SUPERSEDED_FOR_NOW；Nat Micro重回主轨道但**尚未充分**（L5/L6待补）——诚实状态，非选答案。
 
 ## 6. Round-2（收敛前最后bounded增量，不扩主题）
 
-1. D6形式化（≥2独立transitions预注册pole对比；AP2/PUF wide OGs）+ Pf8罕见变异边界 + branch-LOO。
-2. A：GSE222586/GSE220039入库映射 + PfAP2-P/PfPuf1 processed表达 + InterPro正式富集复现；成立则收1–3候选。
+1. D2b 全蛋白组归属（不限 core-181，生死项）+ D6形式化（≥2独立transitions预注册pole对比；AP2/PUF wide OGs）+ Pf8罕见变异边界 + branch-LOO。
+2. A：GSE222586/GSE220039入库映射 + PfAP2-P/PfPuf1 processed表达 + InterPro正式富集复现 + 严格PUF集构建；成立则收1–3候选。
 3. C：维持现状（不再加模态）；仅若acute translation×K13数据出现才升级。
 4. Round-2后开M5终审：A-state转正则D+A成稿；A-state失败则D+C partition或诚实降级（T01重激活）。
 
 ## 7. 对PLAN假设的影响
 
-- H-D（partition）：round-1支持（structured churn + 弱版axis-separation + AP2/PUF counterfactual）。
+- H-D（partition）：round-1 支持但降级为 core-OG 框内（弱版axis-separation + AP2 强/宽RNA-binding 弱 counterfactual；严格 PUF 未定）。
 - H-A（lifecycle co-option）：未证实也未证伪，富集侧强、state侧弱。
 - H-C（ART context）：分区描述成立，机制未立；supply措辞维持封顶。

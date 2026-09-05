@@ -1,0 +1,7 @@
+task: M4R-A-ROUND1
+asn_top10_rule: >=90th pct of asn_frac (PlasmoDB-71 longest isoform)
+lcr_proxy: window-20 Shannon entropy <1.8 fraction (heuristic, not InterPro)
+gene_sets: product-description regex (GFF has no GO terms); documented description-derived
+gametocyte: GSE75795 raw 9.1 bedGraphs summed over v71 gene bodies; n=1 per sex -> descriptive
+chip: rep-consensus (overlap) peaks; gene = body or <=1.5kb upstream; v71 coords vs 9.1 mapping approx
+stats: Fisher+WoolfCI+BH; Logit adjusted; MW stratified; spearman

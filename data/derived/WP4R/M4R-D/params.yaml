@@ -1,0 +1,9 @@
+seed: 20260905
+tree: /home/huyudi/015_plasmo/data/derived/WP4/L2_site_composition/supermatrix.treefile
+ogs_pass: 175
+sites_parsimony: 29558
+lcr_rule: window64 step8 entropy<1.5; short-protein whole-seq
+coupling: q_bh<0.05 vs q>=0.1 (L2v2)
+branch_filter: |dGC|>=median(0.0373)
+round2: D5_stratified_CMH + D4_zhang_els + D6_pilot_mafft
+round1b_scripts: run_m4rd_round2.py run_m4rd_round3.py

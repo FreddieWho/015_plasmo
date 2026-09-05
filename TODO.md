@@ -12,11 +12,11 @@
     - [x] GEO：GSE75795/GSE120448/GSE134268/GSE120488/GSE225340/GSE59099 落盘+manifest+sha256
     - [x] GCN5 2026（PMC13438671，MOESM1-7，Source Data 在手；DOI 已验）
     - [x] 人工：essentiality 三篇 30 文件 + K13 scRNA zip 全部到货验收入库（2026-09-05，inbox+raw+manifest+sha256，registry 已翻 VERIFIED）
-- [ ] M3 供需 R3（D-008 分层）   下载子项可并行，需求计算阻塞于下载完成
+- [-] M3 供需 R3（D-008 分层）   下载子项可并行，需求计算阻塞于下载完成  【已废止：Gate C PIVOT 2026-09-04 / M4R reset 2026-09-05，见分支记录】
     - [x] 主：D006/D011/D012/D013 落盘登记 VERIFIED（2026-09-04，21MB+1.3MB）
-    - [ ] 辅：D008 M03 部分到货（正文+supp PDF 已入库，xlsx 待定，不阻塞）+ D014/Pv4 按需
-    - [ ] D_{c,s,t} 需求计算，主看 Pf-vs-Pk 超越 genome_gc，辅线只做支持
-    - [ ] tRNA/ribo/mRNA 第二正交层整合与跨谱系一致性
+    - [-] 辅：D008 M03 部分到货（正文+supp PDF 已入库，xlsx 待定，不阻塞）+ D014/Pv4 按需
+    - [-] D_{c,s,t} 需求计算，主看 Pf-vs-Pk 超越 genome_gc，辅线只做支持
+    - [-] tRNA/ribo/mRNA 第二正交层整合与跨谱系一致性
 - [x] D_{c,s,t} 主判定跑通（2026-09-04，8 TSVs + 交付段全齐）
 - [x] M3-03 跑完判阴（2026-09-04，0 early hits，assay-sensitive）→ Gate C PIVOT
 - [x] 攻击性审查修复 1-4（2026-09-04，D-033：git+环境锁 / GPL18893 溯源 / tRNA 隔离 / I5 双轨 0=0 spearman=0.9991 PIVOT 稳健）
@@ -30,12 +30,12 @@
     - [x] L1 结果验收（2026-09-04 全扫版 DOUBLE_POSITIVE，D-023：AAT/Val/Ala 三家族双阳，Lys/Ile 未复现）
     - [x] L2 v1 实施+验收（2026-09-04，D-026：H-L2a 反向、H-L2b 成立；官方 orthogroup 到货后复跑）
 - [x] L1b 解释（2026-09-04，D-025：5→1，AAT 唯一超组成双阳，Val/Ala=第一位回声）
-- [ ] T01 期刊降级签字（B 档三选一）        ← 阻塞 M4 收口口径
-- [ ] M4 Pf 机制聚焦（AAA/s2U/K13 + 2 竞争模型 + 逃逸边界，在手数据）
+- [-] T01 期刊降级签字（B 档三选一）        ← 阻塞 M4 收口口径  【已废止：Gate C PIVOT 2026-09-04 / M4R reset 2026-09-05，见分支记录】
+- [-] M4 Pf 机制聚焦（AAA/s2U/K13 + 2 竞争模型 + 逃逸边界，在手数据）  【已废止：Gate C PIVOT 2026-09-04 / M4R reset 2026-09-05，见分支记录】
 - [x] M3-02 功能层验收（2026-09-04，9 文件 + GSE151189）
-- [ ] M3-01 + M3-02 会合：LysAAA/AAG + s2U 轴第二层检验 → Gate C 证据卡
-- [ ] 定 Pv P01 vs Salvador-I 双跑敏感性方案
-- [ ] Gate C 评审材料组装（每个候选跨层证据卡 + 冲突标记 UNRESOLVED）
+- [-] M3-01 + M3-02 会合：LysAAA/AAG + s2U 轴第二层检验 → Gate C 证据卡  【已废止：Gate C PIVOT 2026-09-04 / M4R reset 2026-09-05，见分支记录】
+- [-] 定 Pv P01 vs Salvador-I 双跑敏感性方案  【已废止：Gate C PIVOT 2026-09-04 / M4R reset 2026-09-05，见分支记录】
+- [-] Gate C 评审材料组装（每个候选跨层证据卡 + 冲突标记 UNRESOLVED）  【已废止：Gate C PIVOT 2026-09-04 / M4R reset 2026-09-05，见分支记录】
 
 ## 变更记录
 
@@ -55,3 +55,10 @@
 - 2026-09-05：M4R rescue 启动（D-036 用户授权）：M4R-0 完成 + package 1.1-M4R + state（M4R/WP4R/COMPOSITION_TO_PROTEIN_FUNCTION/D+A+C/M4R_RESCUE_ACTIVE）+ claim 重审计（CLM08/09/10）+ ROUTE_RESET 权威文档 + M4R-D/A/C 三包并行。原因：M4 Asn/L2 新发现 + search supplement 三线锚点；旧 Gate C PIVOT 保留不推翻。
 - 2026-09-05：M4R round-1完成（D-037）：D/A worker回包CONDITIONAL + C主Agent收尾CONDITIONAL（修MWU exact-hang）；M5 convergence判D+A leading；EVID-M4R-D/A/C-001入账。原因：三线第一轮是M4R→M5的约定收敛点；C两轮worker超时须如实记录并换主Agent有界收尾。
 - 2026-09-05：对抗性审阅完成（docs/M4R_ADVERSARIAL_REVIEW_20260905.md）：无目标偏移；修复 git 提交/PACKAGE_MANIFEST 失效 59 项/bioinf-data-index 缺失/CHANGELOG v1.1/ROADMAP R4R/STATUS 进度条；gate M4R_CONVERGENCE 状态改 HOLD（信息增益任务=round-2）。待办：D2b 全蛋白组归属（Fig3 生死项）、D6 形式化、A InterPro 正式集、C 措辞修正（16/27 存活+弱 stage 参考）。
+
+## 分支记录
+
+- **当前执行分支：** M4R/WP4R（D backbone + A/C 并行 → M5 convergence），D-036/D-037。
+- **停止分支：** 跨谱系 codon-stress programme（Gate C PIVOT 2026-09-04，永久）；Pf AAA/s2U/K13 唯一 M4 主线（2026-09-05 降 boundary context）；上列 6 条 [-] 已废止项随分支停止。
+- **暂缓分支：** T01 期刊降级（SUPERSEDED_FOR_NOW，M5 终审时重估）；Pv 双株敏感性（MOOT）。
+- **并行分支：** M4R-D / M4R-A / M4R-C 三线（round-1 完成，round-2 bounded）。

@@ -1,0 +1,12 @@
+sheet	nrows	ncols	header
+Figure 2	55	99	(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+Figure 3	30	37	(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Figure 4	26	5	(None, None, None, None, None)
+Figure 5	81	21	(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Figure 6	126	93	(None, 'PfGCN5 LoxP -RAP_32_35h_B1', 'PfGCN5 LoxP -RAP_32_35h_B2', 'PfGCN5 LoxP -RAP_32_35h_B3', 'PfGCN5 LoxP +RAP_32_35h_B1', 'PfGCN5 LoxP +RAP_32_35h_B2', 'PfGCN5 LoxP +RAP_32_35h_B3', 'WT_+RAP_32_35h_Cycle1_B1_', 'WT_+RAP_32_35h_Cycle1_B2', 'WT_+RAP_32_35h_Cycle1_B3', 'D3_+RAP_32_35h_Cycle1_B1_',
+Figure 7	29	16	(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Figure 8	24	8	(None, None, None, None, None, None, None, None)
+Figure 9	117	18	(None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+Suppl. Fig. 6	9	13	(None, None, None, None, None, None, None, None, None, None, None, None, None)
+MOESM3:Complete set Supp. table 1	715	17	('Search Engine: Mascot version 2.5.1', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+MOESM4:Sheet1	31	3	('Primer name', 'Sequence', 'Notes')

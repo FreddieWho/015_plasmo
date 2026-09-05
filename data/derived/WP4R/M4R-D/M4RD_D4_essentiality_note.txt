@@ -1,0 +1,3 @@
+Zhang S5 Pf genes=5403 (MIS/MFS/insertions; see M4RD_D4_zhang_constraint.tsv).
+Elsworth S3a Pk genes=5266; categories={'Category1': Counter({'dispensable': 2124, 'essential': 2037, 'intermediate': 1105}), 'Category2': Counter({'': 4017, 'low TTAA': 1249}), 'Category3': Counter({'': 5137, 'low fitness': 126, 'high fitness': 3}), 'Category4': Counter({'': 5144, "3' truncation with high confidence": 89, "5' truncation with high confidence": 33})}
+NOTE: Elsworth IDs are Pk (PKNH_); Pf-regulator constraint uses Zhang Pf directly. Pk-Pf ortholog-mapped constraint deferred to round 2.
