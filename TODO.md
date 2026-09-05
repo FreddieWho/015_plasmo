@@ -6,11 +6,12 @@
     - [x] A：正式 enrichment + lifecycle 映射 + 候选收缩（本轮不收shortlist）
     - [x] C：stage-adjusted DHA + acute/chronic + feature 分解 + 独立 ART 验证 + dTE upgrade
 - [x] M5 convergence review round-1（2026-09-05，D-037：D+A leading，D+C第二context，降级暂不执行；见docs/M5_CONVERGENCE_REPORT_M4R_ROUND1.md）
-- [ ] M4R round-2 bounded增量 → M5终审（D-038 启动；C维持不加模态）
-    - [ ] D2b 全蛋白组归属（不限core-181，Figure 3生死项）
-    - [ ] D6形式化（≥2独立transitions预注册pole对比；AP2/PUF wide OGs）+ branch-LOO + D3多维匹配
-    - [ ] Pf8群体边界（Zenodo 7文件已入库；SNP-level deferred）
-    - [ ] A lifecycle映射（GSE222586/GSE220039已入库）+ PfAP2-P/PbApiAP2表达 + InterPro正式集 + 严格PUF集；成立则收1–3候选
+- [x] M4R round-2 bounded增量（2026-09-05，D-038启动，双包并行一次通过无超时）
+    - [x] D2b 全蛋白组归属（SURVIVES框内；harbor匹配后LCR零超额；采样框偏差定量）
+    - [x] D6形式化（T2+T3规则满足，T1注册阴性，CHROM null）+ branch-LOO 7/7 + D3多维匹配（改名）
+    - [x] Pf8群体边界（34/34 markers分离+CNV率；SNP-level deferred）
+    - [x] A lifecycle映射（三极：gametocyte弱/zygote null/liver检测推翻排除）+ PfAP2-P/PbApiAP2表达 + InterPro正式集 + 严格PUF集（n=2不可判）；不收shortlist
+- [x] M5终审（2026-09-05，D-039：D+A+C三线各安其位，T01不激活；见docs/M5_FINAL_REVIEW_20260905.md）
 
 - [x] M4R T1 数据准备（2026-09-05：GEO 六集 + GCN5 全套 VERIFIED，~540MB；essentiality/K13scRNA 转人工）
     - [x] GEO：GSE75795/GSE120448/GSE134268/GSE120488/GSE225340/GSE59099 落盘+manifest+sha256
@@ -66,3 +67,4 @@
 - **停止分支：** 跨谱系 codon-stress programme（Gate C PIVOT 2026-09-04，永久）；Pf AAA/s2U/K13 唯一 M4 主线（2026-09-05 降 boundary context）；上列 6 条 [-] 已废止项随分支停止。
 - **暂缓分支：** T01 期刊降级（SUPERSEDED_FOR_NOW，M5 终审时重估）；Pv 双株敏感性（MOOT）。
 - **并行分支：** M4R-D / M4R-A / M4R-C 三线（round-1 完成，round-2 bounded）。
+- 2026-09-05：M4R round-2完成+M5终审（D-038/D-039）：D/A双包一次通过无超时；D CONDITIONAL-STRONG（LOO 7/7、D2b框内SURVIVES、D6规则满足、Pf8边界），A CONDITIONAL不变（AP2正式集复现35.3、liver排除、zygote null、无shortlist）；终审D+A+C各安其位、T01不激活（偏离预注册字面理由见终审§2）；EVID-M4R-D/A-002入账；LEADS L-006/L-008并入、L-007部分、L-010新增。
