@@ -51,21 +51,21 @@ researcher 列为候选第三数据；实查为 ITDR 热位移设计（8-23GB/�
 状态：已放弃（设计不匹配）
 
 2026/9/5
-## L-006 D2b 全蛋白组 architecture 归属（不限 core-181）
+## L-006b D2b 全蛋白组 architecture 归属（不限 core-181）
 core-181 采样框排除 LCR 重/快进化蛋白，"churn 不在 LCR"部分由框架构造。
 若 D2b 显示框外 churn 实为 LCR 富集，Figure 3 与 general-principle 强度都要降。
 最小验证：全 Pf 蛋白组 composition-coupled 候选 × LCR/IDR/domain 归属表，一次工作单元。
 状态：已并入主线（round-2 D2b SURVIVES 框内，M4RD_D2b_verdict.txt）
 
 2026/9/5
-## L-007 严格 PUF 集构建（PlasmoDB annotation/orthology，非 regex）
+## L-007b 严格 PUF 集构建（PlasmoDB annotation/orthology，非 regex）
 round-1 严格 PUF 仅 2 基因不可判；D 线 56 基因宽集口径不能当 PUF 证据。
 若严格集（~10–20 基因）富集成立，CLM09 才能写 AP2/PUF。
 最小验证：InterPro/ortholog 组 PUF 名单 + 同样富集流程复跑。
 状态：部分并入（严格集仍 n=2 不可判；anchor 法 caveat 转 L-010）
 
 2026/9/5
-## L-008 branch-aware LOO 系统发育敏感性
+## L-008b branch-aware LOO 系统发育敏感性
 D1 concordance（OR=2.25）未做 leave-one-clade-out；单枝驱动风险未排除。
 最小验证：7 次 LOO 重跑 concordance/Fisher，几小时计算。
 状态：已并入主线（LOO 7/7 全显著，M4RD_D1_LOO.tsv）

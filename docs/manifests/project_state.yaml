@@ -13,8 +13,8 @@ active_routes:
   - "A_LIFECYCLE_REGULATORY_LCIDR"
   - "C_ART_STRESS"
 status: "M4R_RESCUE_ACTIVE"
-last_completed_task: "M4R-0 state/evidence fix + M4R search integration (M4R_SEARCH_SUPPLEMENT_20260905 + T1/T3 downloads VERIFIED: GEO 6 sets, GCN5 MOESM1-7, K13 scRNA PRJNA1049964/Zenodo 20344254, essentiality 30 files) + package update D-036"
-next_action: "M4R-D/A/C bounded task packets parallel first-round info-gain analyses, then M5 convergence review (D / D+A / D+C / D+A+C / downgrade)"
+last_completed_task: "M5 final (D-039): D+A+C bounded roles (D backbone Fig2-3 CONDITIONAL-STRONG; A bounded Fig4; C Fig5/Extended); T01 stays superseded; EVID-M4R-D/A-002"
+next_action: "Manuscript packaging (Figure mapping per M5_FINAL_REVIEW §3 + storyboard §11); pre-submission must-do L-010 true-GO check; SNP-level burden deferred; no new analysis branches"
 open_decisions:
   - "G0/A/B GO closed; Gate C PIVOT 2026-09-04 stands (old codon programme dead, EVID-M3-001/003 retained) — M4R does NOT overturn Gate C (D-036)"
   - "D-036 M4R bounded rescue authorized by user 2026-09-05: new question composition→protein→function; L2 main-story fixed; D backbone + A/C parallel functional routes"

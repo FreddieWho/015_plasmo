@@ -112,3 +112,9 @@
 - **Figure 3（Route D）：** protein architecture partition（structured / IDR / LCR / regulator modules / cross-lineage natural experiment：conserved domain anchor + intervening IDR/LCR feature）。
 - **Figure 4：** 最强 functional route（A 或 C，第一轮后竞争）。
 - **Figure 5：** 第二 functional context / mechanistic discrimination / minimal experiment。A/C 只一条成立时另一条进 Extended Data / boundary analysis。不保留“每个旧结果必须占一张图”的包袱；旧 Pf AAA/s2U/K13 M4 主线降为 boundary context（如 M5 需要）。
+
+## 11. M5 终审映射（2026-09-05，D-039；§10 的竞争已裁决，§10 原文保留为历史）
+- **Figure 4：** Route A（有界）——AP2 富集（正式集 vs regex 并排）+ 反事实 + GCN5 单基因座实证（外部阳性对照）+ Pb 家族 map（描述性）+ state-consequence 三极阴性结果诚实报告框。**不宣称 family-wide lifecycle co-option。**
+- **Figure 5 / Extended Data：** Route C——acute/chronic 分区描述 + dTE 规则2弱支持 + M4R-X01 gap 声明。第二语境，不独立承重。
+- Figure 3 维持 §10 定义，附加框内限定（D2b 采样框偏差定量 + T1 注册阴性 + 群体层）。
+- 标题禁区维持：no repeat-first、no dual-axes、no co-option-proven、no supply-collapse。
