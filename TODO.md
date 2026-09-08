@@ -12,6 +12,7 @@
     - [x] Pf8群体边界（34/34 markers分离+CNV率；SNP-level deferred）
     - [x] A lifecycle映射（三极：gametocyte弱/zygote null/liver检测推翻排除）+ PfAP2-P/PbApiAP2表达 + InterPro正式集 + 严格PUF集（n=2不可判）；不收shortlist
 - [x] M5终审（2026-09-05，D-039：D+A+C三线各安其位，T01不激活；见docs/M5_FINAL_REVIEW_20260905.md）
+- [x] 手稿打包（2026-09-08 用户指令）：L-010 真 GO 复核落盘（curated 欠定，T01 不触发）+ Fig1–5 图包 14 panels 多模态目检（8 项修复 + Fig5a dir-sig 诚实性修复，全部复检通过）+ 主文本草稿 v0.1 + 主表 S1–S6 组装
 
 - [x] M4R T1 数据准备（2026-09-05：GEO 六集 + GCN5 全套 VERIFIED，~540MB；essentiality/K13scRNA 转人工）
     - [x] GEO：GSE75795/GSE120448/GSE134268/GSE120488/GSE225340/GSE59099 落盘+manifest+sha256
@@ -68,3 +69,4 @@
 - **暂缓分支：** T01 期刊降级（SUPERSEDED_FOR_NOW，M5 终审时重估）；Pv 双株敏感性（MOOT）。
 - **并行分支：** M4R-D / M4R-A / M4R-C 三线（round-1 完成，round-2 bounded）。
 - 2026-09-05：M4R round-2完成+M5终审（D-038/D-039）：D/A双包一次通过无超时；D CONDITIONAL-STRONG（LOO 7/7、D2b框内SURVIVES、D6规则满足、Pf8边界），A CONDITIONAL不变（AP2正式集复现35.3、liver排除、zygote null、无shortlist）；终审D+A+C各安其位、T01不激活（偏离预注册字面理由见终审§2）；EVID-M4R-D/A-002入账；LEADS L-006/L-008并入、L-007部分、L-010新增。
+- 2026-09-08：手稿打包完成（D-041）：L-010 落盘（curated 欠定，T01 不触发）+ Fig1–5 14 panels 目检（8 项修复 + Fig5a dir-sig 诚实性修复，全部复检通过）+ Fig4a GO 行并入 + 主文本 v0.1 + 主表 S1–S6 + FIG_FIXLOG 归档。原因：用户指令打包 + 打包前多模态核验。

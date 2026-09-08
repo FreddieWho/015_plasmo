@@ -1,0 +1,10 @@
+Figure 2 — Base composition propagates quantitatively into codon and amino-acid space; composition-coupled turnover is branch-aware and distinct from resistance sites (CLM02/CLM03/CLM08, CANDIDATE/C2).
+
+One-sentence claim: GC3 explains a median 84.5% of synonymous codon deviation and genome GC a median 78.7% of amino-acid CLR variation, yet composition-coupled sites follow branch GC/AT change far above background (fraction 0.791 vs 0.628, OR=2.25, Fisher p=9.5e-10, LOO OR range 1.71–4.35 significant 7/7), while 14/14 known resistance positions are composition-uncoupled at conserved sites.
+
+(a) Background-explained variation (median across families; codon n=288 family×species rows, AA n=20; masked track; M2-01/M2-02 background_explained tables). Residuals are the minority.
+(b) Branch-aware concordance forest (n_events: coupled 316, uncoupled 8821, informative 13604; 95% CI; null 0.5 dashed). Symbols differ by stratum (circle/square/triangle) in addition to color.
+(c) Per-site separation: 14 known resistance positions (K13 539/580, CRT 76, DHFR 51/59/108/164, DHPS 436/437/540/581, MDR1 86/184/1246; OGs in table) all uncoupled (red x); matched-background coupling rises only at lower conservation (weak reading: distinct sequence spaces, not dual adaptive axes).
+
+Stats units: parsimony sites (n=29,558; 646 ambiguous-root flagged) and branches; species are not independent replicates (branch-aware + LOO replace species-counting). Sensitivity: LCR masked/unmasked dual-track; uncertainty-site exclusion; terminal correlation retained as descriptive layer. Extended pointer: M4RD_D1_branch_substitutions.tsv (24,520 events), D1_LOO.tsv, D3 tables.
+Banned language respected: no dual-axes, no causal claims (association ceiling).

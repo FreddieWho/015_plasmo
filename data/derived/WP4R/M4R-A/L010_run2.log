@@ -1,0 +1,30 @@
+== GO term label check ==
+  GO:0003700 = DNA-binding transcription factor activity  [set TF_DNAbinding]
+  GO:0140110 = transcription regulator activity  [set TF_DNAbinding]
+  GO:0003723 = RNA binding  [set RNA_binding]
+  GO:0003682 = chromatin binding  [set chromatin]
+  GO:0006338 = chromatin remodeling  [set chromatin]
+  GO:0006355 = regulation of DNA-templated transcription  [set reg_transcription]
+== download QuickGO taxon 36329 ==
+  hits=25408 pages=255
+  reused /home/huyudi/015_plasmo/data/derived/WP4R/M4R-A/L010_quickgo_pages.jsonl n=25408
+== map UniProt->PF3D7 ==
+  map entries=5114 pf genes=5056
+  mapped annotations=23324 genes=3527 ev={'IEA': 9056, 'IBA': 8518, 'ISS': 2104, 'IDA': 2027, 'TAS': 679, 'RCA': 355, 'IPI': 215, 'EXP': 191, 'IMP': 95, 'ISM': 30, 'NAS': 16, 'ND': 15, 'IGI': 11, 'IGC': 5, 'ISO': 3, 'IC': 3, 'IEP': 1}
+  gff genes=5285
+  universe check: n=5285 q90=0.1837 (round-2: 0.1837)
+  universe=5285 q90=0.1837 top10 n=530
+                  set stratum    n  in_top         OR             p          q_bh
+0       TF_DNAbinding     all   29      16  11.354684  1.655075e-09  9.930447e-09
+1       TF_DNAbinding  nonIEA   10       1   0.996849  1.000000e+00  1.000000e+00
+2       TF_DNAbinding     IEA   19      15  34.594660  2.300306e-12  2.760367e-11
+3         RNA_binding     all  285      35   1.274141  1.881215e-01  2.508286e-01
+4         RNA_binding  nonIEA  142      10   0.673514  2.593901e-01  3.112681e-01
+5         RNA_binding     IEA  195      29   1.600185  2.806020e-02  5.612040e-02
+6           chromatin     all   73      13   1.967602  4.587754e-02  7.428145e-02
+7           chromatin  nonIEA   47       5   1.068707  8.075958e-01  8.810136e-01
+8           chromatin     IEA   28       9   4.305889  1.154009e-03  2.769622e-03
+9   reg_transcription     all   76      25   4.566104  3.581076e-08  1.074323e-07
+10  reg_transcription  nonIEA   38       8   2.413793  4.952097e-02  7.428145e-02
+11  reg_transcription     IEA   47      20   6.867102  5.473908e-09  2.189563e-08
+DONE

@@ -1,0 +1,12 @@
+mutant	pf_ortholog	transmission_blocked
+ap2-g	PF3D7_1222600	True
+ap2-g2	PF3D7_1408200	True
+ap2-o	PF3D7_1143100	True
+ap2-o2	PF3D7_0516800	True
+ap2-o3	PF3D7_1429200	True
+ap2-o4	PF3D7_1350900	True
+ap2-sp	PF3D7_1466400	True
+ap2-sp2	PF3D7_0404100	True
+ap2-sp3	PF3D7_0622900	True
+ap2-l	PF3D7_0730300	False
+PBANKA_1319700	PF3D7_1456000	False

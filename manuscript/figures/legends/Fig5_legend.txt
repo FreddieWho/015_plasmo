@@ -1,0 +1,16 @@
+Figure 5. ART-stress partition, second context (Route C; CONDITIONAL, not MOA).
+(a) Per-contrast Spearman rho between gene Asn fraction and response (95% Fisher-z CI;
+* q<0.05), acute (blue circles) vs chronic (red squares) arms. GSE151189 rows shown
+stage-adjusted (STAGEADJ preferred; 16/27 raw-significant survive adjusted and positive).
+Stage reference is weak (R2~1e-4-3%), so "stage is not the driver" holds only under this
+reference; length attenuation is large but nonzero; acute evidence is mRNA-layer only
+(microarray + scRNA), cross-dataset independence downgraded half a grade. Chronic protein
+(Mok2021) runs opposite-sign; chronic transcript (GSE59099) is null; genotype interaction
+(DiD) is weak. Mobilization/conservation language is hypothesis only.
+(b) Left: dTE interaction upgrade under rule 2 — direction agrees with ratio-based dTE
+(sign agreement 0.924, spearman 0.996) but only 1 gene at q<0.05, so WEAK SUPPORT retained
+and ratio-based dTE stays DISCOVERY/SUPPORTING. Right: standing M4R-X01 gap — no suitable
+public acute DHA x K13 translation-layer data exist; scRNA is transcript-only and does not
+close it. C stays a partition figure, not a mechanism figure.
+N/units: per-contrast gene n in panel table; q from validation table (BH per analysis).
+Sensitivity/Extended: no-Schizont tracks and full 142-contrast table in Extended Data.

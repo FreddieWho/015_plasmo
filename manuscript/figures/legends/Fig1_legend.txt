@@ -1,0 +1,10 @@
+Figure 1 — Independent genome-composition transitions across Plasmodium (descriptive layer, CLM01/C1).
+
+One-sentence claim: Plasmodium spans a 34.1pp genome-GC gradient (18.2–52.3%, n=18 species) that is not a single AT trajectory: ancestral reconstruction and leave-one-clade-out retain the gradient 7/7, with grade-A independence (low-GC Laverania+avian vs high-GC vivax+piroplasm poles).
+
+(a) Genome GC (%) per species (n=18; frozen accessions per M1-01_composition_table.tsv; PlasmoDB-71 counterparts noted). Nuclear-chromosome GC tracks genome GC.
+(b) k-mer NJ species tree (M1-02_species_tree.nwk; branch lengths schematic — k-mer distances saturated) with tip genome-GC dots (blue→red) and squared-change-parsimony ancestral GC in red italics (17 internal nodes annotated from M1-02_ancestral_gc.tsv; root N0=43.6%).
+(c) Leave-one-clade-out: retained GC range per removed clade; gradient retained 7/7 (M1-02_leave_one_clade_out.tsv).
+
+Stats units: species (n=18; genes do not multiply species N per I3). Sensitivity: compartment split (nuclear/mito/apicoplast in source table); N%/contig artifact audit in source README. Extended pointer: full QC tables in data/derived/WP1/M1-01_composition/ and M1-02_phylogeny/.
+No causal/adaptive language (C1 ceiling).

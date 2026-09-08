@@ -1,0 +1,22 @@
+Figure 4. Bounded regulatory-layer enrichment (Route A; CANDIDATE, enrichment != mechanism).
+(a) Asn top-decile membership odds ratios (95% CI) for regulator sets under InterPro-formal
+vs regex-baseline definitions. ApiAP2 replicates quantitatively across methods (OR 35.3 vs 34.3);
+chromatin flips to weak-positive only under the formal set; broad RNA-binding attenuates
+(3.08 -> 1.67) but stays significant; CCR4-NOT/transcription degenerate under formal sets
+(small-n, not refutation); sexual/gametocyte formal set is collinear with the AP2 set
+(do not double-count); strict PUF (n=2) is undetermined and is not evidence; PUF repeat-broad
+is null. L-010 true-GO check pending at build time.
+(b) Counterfactual stratification by LCR tertile: regulator Asn excess holds only in the
+high-LCR stratum (MW p=4.8e-07; zero/lowpos n.s.); length/LCR-adjusted logit OR=2.59
+(1.69-3.97). The counterfactual is partial, not universal.
+(c) Left: single-locus perturbation proof (external positive control, GCN5 conditional
+knockdown source data): day-6 parasitaemia ~17x lower under +RAP; replicate line identity
+(LoxP/WT) not resolved from the snapshot layout, shown pooled by condition; see inventory.
+Middle: Pb ApiAP2 family map, descriptive only (11 KO-verified mutants, 9
+transmission-blocked; small-n, not a test; Pb data not used as Pf expression evidence).
+Right: honest negative-report box for lifecycle state-consequence: gametocyte weak direction
+only (exploratory), zygote null, liver excluded as detection-driven. No shortlist;
+H-A stays hypothesis; family-wide lifecycle co-option is NOT claimed.
+N/units: universe n=5285 Pf genes, Asn top-decile q90=0.1837; Fisher OR + Woolf CI + BH q;
+MW asymptotic. Sensitivity/Extended: anchor-method caveat (formal sets are
+InterPro-anchored, weaker than curated GO) -> Extended Data + L-010.

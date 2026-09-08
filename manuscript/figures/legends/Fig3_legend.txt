@@ -1,0 +1,10 @@
+Figure 3 — Composition-driven turnover partitions protein architecture within a quantified sampling frame (Route D; CLM08 CANDIDATE/C2, frame-internal qualifier mandatory).
+
+One-sentence claim: Within conserved single-copy core genes, composition-coupled turnover falls in structured, domain-rich, Asn-depleted sequence with no LCR excess under length×OG-age matching (n_harbor=91 vs n_bg=5298; LCR MW p=0.10; Asn MW p=3.9e-33 depleted); two of three cross-lineage transitions are composition-consistent (T2+T3; T1 registered negative; CHROM null throughout); and 34/34 known resistance markers segregate in present-day Pf8 populations.
+
+(a) Harbor-vs-matched medians (LCR fraction 0.0 vs 0.0; Asn 0.064 vs 0.119; polyN_max 2 vs 3; n_IPR 5 vs 1; MW asymptotic p annotated; bg hatched in addition to color). Right box: sampling-frame bias quantified (core-181 shorter/lower-Asn than rest of proteome) — "not repeat-confined" is frame-internal; D2b verdict SURVIVES.
+(b) Per-transition expected-sign fractions (AP2 circle, PUF_RNA square, CHROM triangle; n and sign-test p labeled; null 0.5 dashed). T2: AP2 4/4 (p=0.0625), PUF_RNA 21/27 (p=0.0030); T3: AP2 3/4, PUF_RNA 18/25 (p=0.022); T1: negative as registered (weak transition by construction: GC 0.19 vs 0.18).
+(c) Pf8 population layer (n≈24,409 samples; Zenodo 18681980): segregating vs fixed resistance markers; CNV amplification frequencies (GCH1/PM2-PM3 ~0.28, MDR1 0.20, CRT 0.086). SNP-level burden deferred (Zarr streaming beyond budget) — stated gap, not hidden.
+
+Stats units: genes (D2b), per-transition sign tests (D6), population samples/markers (Pf8). Sensitivity: LCR caller dual-track (convention + 2 sensitivities); within-OG controls structurally impossible for fast-evolving drug genes (recorded limitation); terminal layer kept. Extended pointer: D2/D3/D4 tables, per-transition table (118 rows), M4RD_D2b_verdict.txt.
+Banned language respected: no repeat-first, no dual-axes, no mechanism (association ceiling); T1 negative shown, not rescued.

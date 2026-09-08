@@ -11,3 +11,7 @@ file	sha256	size
 /home/huyudi/015_plasmo/data/manual_inbox/pmc10627835_tmp/41564_2023_1497_MOESM3_ESM.xlsx	cd8043703c7cddc7a5e3574094479538360e659be1150b2d82520ab1b684c087	1716854
 /home/huyudi/015_plasmo/data/manual_inbox/pmc10627835_tmp/41564_2023_1497_MOESM5_ESM.xlsx	b117c6364c25eee3dc2117536e97b4b9bdf5f1610a23612411e64d3eded5e97d	156800
 /home/huyudi/015_plasmo/data/manual_inbox/M4R_PBAPIAP2_2017/PMC5241200_supp.zip	5197394fef1ec6b239fcb4cf8d62bf9db61550aefe85666dca03a7a861d534a	28174758
+M4RA_l010_annotations.tsv	QuickGO taxon 36329 mapped to PF3D7 (NOT-filtered)
+M4RA_l010_enrichment.tsv	pre-specified GO sets x IEA/nonIEA strata, Fisher+BH
+L010_quickgo_pages.jsonl	raw QuickGO pages 1-255
+run_l010.py	seed 20260905

@@ -83,3 +83,4 @@ round-2 正式集实为 InterPro-anchored（anchor 发现用 product 文本）�
 若真 GO 下 AP2 富集消失，CLM09 降级 + T01 重激活条件触发。
 最小验证：PlasmoDB GO term 富集同一流程复跑，一次工作单元。
 状态：待挖掘
+状态：已并入主线（2026-09-08 L-010：GO-all TF阳性但IEA驱动；curated非IEA n=10 OR~1欠定=注释缺口非证伪；T01触发条件未满足，维持superseded；Fig4a已加GO行）

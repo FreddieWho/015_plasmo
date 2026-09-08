@@ -35,3 +35,9 @@
 - CLM10-H-A：三极中 liver BH-pass 但 detection 对照推翻（NoGFP 检出不对称 p=3.7e-11；检出控制后 n=80 null）→ 排除；zygote null；gametocyte 弱方向维持探索。state-consequence 标准未达，不收 shortlist。
 - Perturbation：PfAP2-P 身份已验；DE 方向不一致；bound 基因 Asn-贫（p~1e-35/1e-16，top10 OR≈1）→ bounding 证据（家族组成 vs 单因子 regulon 分层）；PbApiAP2 map 落盘（27 尝试/11 verified/9 transmission-blocked），交叉 n=2 不可检验。
 - Verdict：CONDITIONAL 不变。详见 M4R-A_ROUND2_REPORT.md。
+
+## L-010 addendum (2026-09-08, main agent)
+- QuickGO taxon 36329 n=25,408 annotations; UniProt->PF3D7 map 5114 entries; universe EXACT-replicated (n=5285, q90=0.1837).
+- TF_DNAbinding (GO:0003700/0140110, labels runtime-verified): all OR=11.4 q=9.9e-09 BUT nonIEA stratum n=10, OR~1.0 n.s. (IEA OR=34.6 drives all) -> curated stratum UNDETERMINED (annotation gap, not refutation).
+- reg_transcription nonIEA OR=2.41 p=0.049 q=0.074 (BH-fail, weak); RNA_binding/chromatin curated null.
+- Verdict: T01 reactivation condition (AP2 enrichment vanishes under true GO) NOT met; T01 stays superseded. CLM09 keeps CANDIDATE + this caveat. Fig4a GO row added (green triangle, q=1.00).

@@ -1,0 +1,29 @@
+== GO term label check ==
+  GO:0003700 = DNA-binding transcription factor activity  [set TF_DNAbinding]
+  GO:0140110 = transcription regulator activity  [set TF_DNAbinding]
+  GO:0003723 = RNA binding  [set RNA_binding]
+  GO:0003682 = chromatin binding  [set chromatin]
+  GO:0006338 = chromatin remodeling  [set chromatin]
+  GO:0006355 = regulation of DNA-templated transcription  [set reg_transcription]
+== download QuickGO taxon 36329 ==
+  hits=25408 pages=255
+  page 25/255 rows=2500 t=182s
+  page 50/255 rows=5000 t=365s
+  page 75/255 rows=7500 t=538s
+  page 100/255 rows=10000 t=722s
+  page 125/255 rows=12500 t=897s
+  page 150/255 rows=15000 t=1076s
+  page 175/255 rows=17500 t=1255s
+  page 200/255 rows=20000 t=1432s
+  page 225/255 rows=22500 t=1612s
+  page 250/255 rows=25000 t=1794s
+  page 255/255 rows=25408 t=1830s
+  saved /home/huyudi/015_plasmo/data/derived/WP4R/M4R-A/L010_quickgo_pages.jsonl n=25408
+== map UniProt->PF3D7 ==
+  map entries=5114 pf genes=5056
+  mapped annotations=23324 genes=3527 ev={'IEA': 9056, 'IBA': 8518, 'ISS': 2104, 'IDA': 2027, 'TAS': 679, 'RCA': 355, 'IPI': 215, 'EXP': 191, 'IMP': 95, 'ISM': 30, 'NAS': 16, 'ND': 15, 'IGI': 11, 'IGC': 5, 'ISO': 3, 'IC': 3, 'IEP': 1}
+Traceback (most recent call last):
+  File "/home/huyudi/015_plasmo/data/derived/WP4R/M4R-A/run_l010.py", line 101, in <module>
+    assert len(F) == 5285, len(F)
+           ^^^^^^^^^^^^^^
+AssertionError: 5389
