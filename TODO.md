@@ -70,3 +70,4 @@
 - **并行分支：** M4R-D / M4R-A / M4R-C 三线（round-1 完成，round-2 bounded）。
 - 2026-09-05：M4R round-2完成+M5终审（D-038/D-039）：D/A双包一次通过无超时；D CONDITIONAL-STRONG（LOO 7/7、D2b框内SURVIVES、D6规则满足、Pf8边界），A CONDITIONAL不变（AP2正式集复现35.3、liver排除、zygote null、无shortlist）；终审D+A+C各安其位、T01不激活（偏离预注册字面理由见终审§2）；EVID-M4R-D/A-002入账；LEADS L-006/L-008并入、L-007部分、L-010新增。
 - 2026-09-08：手稿打包完成（D-041）：L-010 落盘（curated 欠定，T01 不触发）+ Fig1–5 14 panels 目检（8 项修复 + Fig5a dir-sig 诚实性修复，全部复检通过）+ Fig4a GO 行并入 + 主文本 v0.1 + 主表 S1–S6 + FIG_FIXLOG 归档。原因：用户指令打包 + 打包前多模态核验。
+- 2026-09-08：单文件 HTML 打包完成（pandoc --self-contained，4.4MB，15 图内嵌；浏览器渲染抽查首屏/图/尾表通过）：manuscript/PLASMODIUM-C2F_manuscript.html + build_single_html.py。

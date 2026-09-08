@@ -1,6 +1,6 @@
 # Manuscript draft v0.1 — PLASMODIUM-C2F (M5终审后手稿打包)
 
-> 状态：DRAFT。措辞上限 = claim_registry allowed_language（CLM08/09 CANDIDATE C2，CLM10 hypothesis）；标题禁区：no repeat-first、no dual-axes、no co-option-proven、no supply-collapse。每个实质段落末尾附 claim 追溯 tag。Figure 编号见 M5_FINAL_REVIEW §3 + storyboard §11。图版文件待图包 worker 回包后挂载（manuscript/figures/）。
+> 状态：DRAFT。措辞上限 = claim_registry allowed_language（CLM08/09 CANDIDATE C2，CLM10 hypothesis）；标题禁区：no repeat-first、no dual-axes、no co-option-proven、no supply-collapse。每个实质段落末尾附 claim 追溯 tag。Figure 编号见 M5_FINAL_REVIEW §3 + storyboard §11。图版文件已挂载（manuscript/figures/ 14 panels + Extended 全森林图，均多模态目检通过）。
 
 ## Title（候选，投稿前由用户定稿）
 
