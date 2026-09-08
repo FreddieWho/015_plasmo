@@ -72,3 +72,4 @@
 - 2026-09-08：手稿打包完成（D-041）：L-010 落盘（curated 欠定，T01 不触发）+ Fig1–5 14 panels 目检（8 项修复 + Fig5a dir-sig 诚实性修复，全部复检通过）+ Fig4a GO 行并入 + 主文本 v0.1 + 主表 S1–S6 + FIG_FIXLOG 归档。原因：用户指令打包 + 打包前多模态核验。
 - 2026-09-08：单文件 HTML 打包完成（pandoc --self-contained，4.4MB，15 图内嵌；浏览器渲染抽查首屏/图/尾表通过）：manuscript/PLASMODIUM-C2F_manuscript.html + build_single_html.py。
 - 2026-09-08：叙事版重写+新HTML（用户要求纯生物学语言）：manuscript/text/main_text_narrative_v01.md（术语表+10个证据-结论环+整合叙事，全claim上限内）→ PLASMODIUM-C2F_manuscript_narrative.html（4.4MB，15图内嵌，浏览器三屏渲染验证）；修杂词indébito + 标题Traffic混杂。
+- 2026-09-08：指导文档版交付（用户要求）：manuscript/text/guidance_doc_v01.md（最初目标PLAN立场+转向诚实链+证据分级+六漏洞含升级路线+两条最小湿实验+创新点对账）→ PLASMODIUM-C2F_guidance_doc.html（4.4MB，15图内嵌，渲染两屏验证）。
